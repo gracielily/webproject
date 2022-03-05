@@ -3,5 +3,170 @@
 }
 
 body {
-  background: blue;
+  background: #f8f8ff;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.container {
+  margin: 0 100px;
+}
+
+
+/* POKEDEX ENTRIES */
+.pokedex-entry-header {
+  margin: 0 auto;
+  display: block;
+}
+
+.pokedex-entry-header {
+  display: flex;
+}
+
+.pokedex-entry-header > .img-container{
+  width: 33.33%;
+  height: 300px;
+  background: orange;
+  text-align: center;
+  height: 300px;
+  border-radius: 25px 0 0 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokedex-entry-header > .img-container img {
+  margin-top: 30px;
+}
+
+.pokedex-entry-stats {
+  background: #e6e6e6;
+  width:66.66%;
+  padding: 20px;
+  border-radius: 0 25px 25px 0;
+}
+
+.fire-type {
+  background: red;
+  padding: 5px 20px;
+  width: 30px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+thead th,
+tbody td {
+  width: 20%;
+}
+
+th, td {
+  padding: 20px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: grey;
+}
+
+tbody tr:nth-child(even) {
+  background-color: white;
+}
+
+thead tr {
+  background: red;
+}
+
+tbody tr td {
+  text-align: center;
+}
+
+.pokedex-entry-locations img {
+  width: 200px;
+}
+
+
+/* Gallery */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* Timeline */
+
+.timeline {
+  width: 50%;
+  height: 8px;
+  margin: 100px auto;
+  list-style: none;
+  text-align: justify;
+  background: orange;
+  }
+
+/* add gaps after each entry */
+.timeline:after {display: inline-block; content: ""; width: 100%;}
+
+.timeline li {
+display: inline-block;
+width: 20px;
+height: 20px;
+text-align: center;
+position: relative;
+}
+
+.timeline li:before {
+display: inline-block;
+content: attr(data-pokemon);
+font-size: 26px;
+position: absolute;
+left: -180%;
+top:300%;
+}
+
+.timeline li img {
+  border: 10px solid orange;
+  border-radius: 50%;
+  position: relative;
+  top: -280%;
+  left: -200%;
+}
+
+.active {
+  outline: 10px solid red;
+}
+
+/* Navigation */
+
+.navigation {
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navigation ul {
+  justify-content: space-between;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
 }
