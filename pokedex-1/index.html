@@ -11,21 +11,19 @@
   </head>
   <body>
 
-<div class="navigation">
-  <ul>
-    <li>Home</li>
-    <li>Galar Region</li>
-    <a href="/webproject/pokedex-1"><li>Pokedex</li></a>
-    <li>Helpful Guide</li>
-  </ul>
-</div>
+<nav id="navigation">
+  <ul><li><a href="/webproject/galar-region/">Galar Region</a></li>
+<li><a href="/webproject/helpful-guide/">Helpful Guide</a></li>
+<li><a href="/webproject/">Home</a></li>
+<li><a href="/webproject/pokedex-list/">Pokedex</a></li></ul>
+</nav>
 
-<div class="container">
+<main>
   
 
 <div class="pokedex-entry-header">
   <div class="img-container">
-    <img src="/webproject/img/arcanine.gif" alt="image of the pokemon Arcanine">
+    <img src="/img/arcanine.gif" alt="image of the pokemon Arcanine">
   </div>
   <div class="pokedex-entry-stats">
     <div class="heading-left">
@@ -61,19 +59,22 @@ shown that it stashes food in its mane and carries it to its nest for its young.
 <div class="pokedex-entry-evolution">
   <h1>Evolution Chart</h1>
   <ul class="timeline">
+
 <li data-pokemon="Growlithe">
     <img src="/img/Growlithe.png" alt="" width="150px;">
   </li>
+  
 <li data-pokemon="Arcanine">
-  <img class="active" src="/img/Arcanine.png" alt="" width="150px;">
-
+    <img src="/img/Arcanine.png" alt="" width="150px;">
+  </li>
+  
 </li>
 </ul>
 </div>
 
 <br />
 <div class="pokedex-moves-list">
-  <h1>Moves List</h1>
+  <h1>Moves List for Arcanine</h1>
   <table>
     <thead>
       <tr>
@@ -87,24 +88,21 @@ shown that it stashes food in its mane and carries it to its nest for its young.
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Fire Fang</td>
-        <td><p class="fire-type">Fire</p></td>
-        <td></td>
-        <td><p>Physical</p></td>
-        <td><p>10</p></td>
-        <td><p>100</p></td>
-        <td>60</td>
-      </tr>
-      <tr>
-        <td>Fire Fang</td>
-        <td><p class="fire-type">Fire</p></td>
-        <td></td>
-        <td><p>Physical</p></td>
-        <td><p>10</p></td>
-        <td><p>100</p></td>
-        <td>60</td>
-      </tr>
+      
+        <tr>
+          <td>Fire Fang</td>
+          <td>
+            
+            <p class="fire-type">Fire</p>
+            
+          </td>
+          <td>blah blah blah</td>
+          <td><p>Physical</p></td>
+          <td><p>10</p></td>
+          <td><p>100</p></td>
+          <td>60</td>
+        </tr>
+      
     </tbody>
   </table>
 </div>
@@ -134,7 +132,7 @@ shown that it stashes food in its mane and carries it to its nest for its young.
 </div>
 <br/>
 
-</div>
+</main>
 </body>
 </html>
 
