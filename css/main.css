@@ -70,9 +70,76 @@ img {
     background: #ff9ff3;
 }
 
+#rock {
+    background: brown;
+}
+
+#normal {
+    background: gray;
+}
+
+#flying {
+    background: skyblue;
+}
+
+#ghost {
+    background: rebeccapurple;
+}
+
+#poison {
+    background: purple;
+}
+
+#ground {
+    background: sandybrown;
+}
+
+#rock {
+    background: saddlebrown;
+}
+
+#fighting {
+    background: burlywood;
+}
+
+#bug {
+    background: yellowgreen;
+}
+
+#steel {
+    background: lightsteelblue;
+}
+
+#psychic {
+    background: hotpink;
+}
+
+#dark {
+    background: black;
+}
+
+#grass {
+    background: forestgreen;
+}
+
+#electric {
+    background: yellow;
+}
+
+#ice {
+    background: floralwhite;
+}
+
+#water {
+    background: blue;
+}
+
+#dragon {
+    background: cornflowerblue;
+}
+
 table {
     table-layout: fixed;
-    width: 100%;
     border-collapse: collapse;
     border: none;
 }
@@ -673,4 +740,8 @@ div ul {
 
 div li {
     line-height: 1.85em;
+}
+
+#moves li {
+    margin-top: 6px;
 }
