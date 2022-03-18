@@ -15,6 +15,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 100px;
 }
 
+img {
+    border: 3px transparent;
+    border-radius: 10px;
+}
+
 
 /* POKEDEX ENTRIES */
 .pokedex-entry-header {
@@ -368,6 +373,7 @@ h1 {
     background-color: #fff;
     box-shadow: rgba(0 0 0 / 22%) 0px 15px 15px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .cards-container a {
@@ -379,10 +385,13 @@ h1 {
     margin: 0 auto;
     text-align: center;
     background: #f1f5f8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-image img {
     width: 120px;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-info {
@@ -440,7 +449,7 @@ h1 {
     font-size: 22px;
 }
 
-.footer a:hover{
+.footer a:hover {
     color: #f2d335;
 }
 
@@ -555,6 +564,9 @@ h1 {
     background: blue;
 }
 
+.location-cards {
+    height: 260px;
+}
 .location-cards .card-image {
     background: none;
 }
@@ -630,11 +642,35 @@ h1 {
     background: #d93280;
 }
 
-.container img {
-    border: 3px transparent;
-    border-radius: 10px;
-}
-
 h1 {
     text-transform: uppercase;
+}
+
+.max-raid {
+    margin-top: 60px;
+}
+
+
+/*div li {*/
+/*	margin: 0;*/
+/*	padding: 12px;*/
+/*	list-style: none;*/
+/*	background-image: url("/img/pokeball.png");*/
+/*	background-repeat: no-repeat;*/
+/*	background-position: left center;*/
+/*	background-size: 30px;*/
+/*}*/
+
+ul {
+    list-style: none;
+}
+
+div ul {
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+div li {
+    line-height: 1.85em;
 }
