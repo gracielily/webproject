@@ -46,6 +46,10 @@ img {
     margin-top: -10px;
 }
 
+
+#none{
+    color: black;
+}
 #fire {
     background: #ee5253;
 }
@@ -107,15 +111,16 @@ img {
 }
 
 #electric {
-    background: yellow;
+    background: #feca57;
 }
 
 #ice {
-    background: floralwhite;
+    background: aliceblue;
+    color: black;
 }
 
 #water {
-    background: blue;
+    background: #2e86de;
 }
 
 #dragon {
@@ -285,6 +290,11 @@ tbody tr td {
 
 .helpful-guide {
     display: flex;
+    margin-bottom: 50px;
+}
+
+.helpful-guide table {
+    width: 100%;
 }
 
 #pokeballs thead tr {
@@ -301,7 +311,7 @@ tbody tr td {
     top: 0;
     float: right;
     height: 180px;
-    margin-top: 150px;
+    margin-top: 350px;
     padding: 40px;
     background: #5f27cd;
     margin-right: 30px;
@@ -398,6 +408,10 @@ h1 {
 #pokedex {
     background: #ff6b6b;
     width: 100%;
+}
+
+#pokedex .circles h1{
+    text-align: center;
 }
 
 .circles-block {
@@ -762,4 +776,17 @@ ul {
 
 #gymleaders thead tr{
     background: #f368e0 !important;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.breadcrumb {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb:hover {
+    color: #feca57;
 }
