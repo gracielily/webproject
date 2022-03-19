@@ -48,127 +48,157 @@
 <main>
     
 <section id="pokedex">
-    <div class="pokedex-entry-header">
-        <div class="img-container">
-            <img src="/img/pokemon/ponyta.gif"
-                 alt="image of the pokemon Arcanine">
-        </div>
-        <div class="pokedex-entry-stats">
-            <div class="heading-left">
-                <h1>Ponyta</h1>
-                <p id="fairy"
-                   class="type">Fairy</p>
-                <div class="heading-right">
-                    <h1>#12345</h1>
-                </div>
-                <p>The sight of it running over 6,200 miles in a single day and night has captivated many people.</p>
-            </div>
-        </div>
-    </div>
-    <br/>
-    <div class="pokedex-entry-overview" style="text-align:center">
-        <h1>Overview</h1>
-        <p>Arcanine is a quadrupedal, canine Pokémon with an orange pelt marked by jagged black stripes. It has
-            diamond-shaped ears with beige insides,
-            black eyes, a round, black nose, and two pointed teeth protruding from its upper jaw.
-            Its head, muzzle, and chest are covered in shaggy, beige fur, except for two oval sections around
-            each eye and ear. Long tufts of fur grow behind its elbows and around its ankles.
-            Its underside is black, and it has a billowing, beige tail that is bent in the middle.
-            Each paw has three toes and a round, pink pad.</p>
-
-        <p> Arcanine is a fiercely brave and loyal Pokémon. It is capable of running 6,200 miles in 24 hours with a
-            speed and grace reminiscent of flight. Additionally, the move Extreme Speed was its signature move in the
-            past. Arcanine has long been admired for its beauty and speed, and anyone who hears its bark will grovel
-            before it. The source of its power is a flame blazing wildly inside its body. Being the result of an
-            evolution via Evolution stone, Arcanine is rarely found in the wild, but when found, it is usually seen
-            living in prairies, and Pokémon Snap has also shown it living in active volcanoes. In the anime, it was
-            shown that it stashes food in its mane and carries it to its nest for its young.</p>
-    </div>
-    <br/>
-    
-        <div class="pokedex-entry-evolution">
-            <h1>Evolution Chart</h1>
-            <ul class="timeline">
-                
-                    <li data-pokemon="Growlithe">
-                        <img src="/img/Growlithe.png" alt="" width="150px;">
-                    </li>
-                
-                    <li data-pokemon="Arcanine">
-                        <img src="/img/Arcanine.png" alt="" width="150px;">
-                    </li>
-                
-                </li>
+    <div class="circles">
+        <div class="circles-block container">
+            <ul id="circles-row">
+                <li id="red-circle"></li>
+                <li id="yellow-circle"></li>
+                <li id="green-circle"></li>
             </ul>
-        </div>
-    
-    <br/>
-    <div class="pokedex-moves-list">
-        <h1>Moves List for Ponyta</h1>
-        <table>
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type(s)</th>
-                <th>Description</th>
-                <th>Category</th>
-                <th>PP</th>
-                <th>Attack Power</th>
-                <th>Accuracy</th>
-            </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>Fire Fang</td>
-                    <td>
-                        
-                            <p class="fire-type">Fire</p>
-                        
-                    </td>
-                    <td>blah blah blah</td>
-                    <td><p>Physical</p></td>
-                    <td><p>10</p></td>
-                    <td><p>100</p></td>
-                    <td>60</td>
-                </tr>
-            
-            </tbody>
-        </table>
-    </div>
-    <br/>
-    <div class="pokedex-entry-locations">
-        <h1>Locations Found</h1>
-        <ul>
-            <li>Blah</li>
-            <li>Blah</li>
-        </ul>
-        <img src="../img/pokeball.png" alt="image of a pokeball">
-    </div>
-    <br/>
-    <div class="pokedex-gallery">
-        <h1>Gallery</h1>
-        <div class="wrapper">
-            <div class="media">
-                <img src="https://images.unsplash.com/photo-1431818563807-927945852ab6?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop="
-                     alt=""/>
-            </div>
-            <div class="media">
-                <img src="https://images.unsplash.com/photo-1443397646383-16272048780e?dpr=1&auto=format&fit=crop&w=1199&h=899&q=80&cs=tinysrgb&crop="
-                     alt=""/>
-            </div>
-            <div class="media">
-                <img src="https://images.unsplash.com/photo-1442965416224-f6a7eca980fa?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop="
-                     alt=""/>
-            </div>
+            <div id="blue-circle"></div>
+            <h1>Ponyta Pokedex Entry</h1>
         </div>
     </div>
+    <br/>
+
+    <div class="container">
+        <div class="pokedex-entries" id="single-entry">
+            <div class="cards-container container">
+
+
+                <div class="card">
+                    <div class="card-image" style="height: 100%">
+                        <img src="/img/pokemon/ponyta.gif"
+                             alt="image of the pokemon Arcanine">
+                    </div>
+                </div>
+
+                <div class="pokedex-entry-stats">
+                    <div class="heading">
+                        <h2 style="color: white">#12345</h2>
+                        <h1>Ponyta</h1>
+                        <p id="fairy"
+                           class="type">Fairy</p>
+                        <p>The sight of it running over 6,200 miles in a single day and night has captivated many
+                            people.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pokedex-entry-overview"
+                 style="text-align:left; background: white; padding: 40px; margin-top:60px;">
+                <h1 style="margin-top:20px">Overview</h1>
+                <div class="overview-content"
+                     style="display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 40px">
+                    <p>Arcanine is a quadrupedal, canine Pokémon with an orange pelt marked by jagged black stripes. It
+                        has
+                        diamond-shaped ears with beige insides,
+                        black eyes, a round, black nose, and two pointed teeth protruding from its upper jaw.
+                        Its head, muzzle, and chest are covered in shaggy, beige fur, except for two oval sections
+                        around
+                        each eye and ear. Long tufts of fur grow behind its elbows and around its ankles.
+                        Its underside is black, and it has a billowing, beige tail that is bent in the middle.
+                        Each paw has three toes and a round, pink pad.</p>
+
+                    <p> Arcanine is a fiercely brave and loyal Pokémon. It is capable of running 6,200 miles in 24 hours
+                        with a
+                        speed and grace reminiscent of flight. Additionally, the move Extreme Speed was its signature
+                        move in the
+                        past. Arcanine has long been admired for its beauty and speed, and anyone who hears its bark
+                        will grovel
+                        before it. The source of its power is a flame blazing wildly inside its body. Being the result
+                        of an
+                        evolution via Evolution stone, Arcanine is rarely found in the wild, but when found, it is
+                        usually seen
+                        living in prairies, and Pokémon Snap has also shown it living in active volcanoes. In the anime,
+                        it was
+                        shown that it stashes food in its mane and carries it to its nest for its young.</p>
+
+
+                    <div>
+                        <img src="/webproject/img/pokemon/ponyta.png" alt="image of a pokeball" width="100%">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="pokedex-entry-locations">
+
+                <h1>Locations Found</h1>
+                <ul>
+                    <li>Blah</li>
+                    <li>Blah</li>
+                </ul>
+                <img src="/webproject/img/pokeball.png" alt="image of a pokeball">
+            </div>
+
+            <div class="pokedex-gallery">
+                <h1>Gallery</h1>
+                <div class="wrapper">
+                    <div class="media">
+                        <a href="/webproject/img/pokemon/ponyta-gallary1.jpg" target="_blank">
+                            <img src="/webproject/img/pokemon/ponyta-gallery1.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="media">
+                        <a href="/webproject/img/pokemon/ponyta-gallary2.jpg" target="_blank">
+                            <img src="/webproject/img/pokemon/ponyta-gallery2.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="media">
+                        <a href="/webproject/img/pokemon/ponyta-gallery3.jpg" target="_blank">
+                            <img src="/webproject/img/pokemon/ponyta-gallery3.jpg" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 
 </main>
 <section class="footer">
     <p><a href="https://github.com/gracielily/webproject" target="_blank"><i class="fab fa-github"></i></a></p>
-    <p>Grace Kelly - [student number]</p>
+    <p>Grace Kelly - 12722041</p>
 </section>
 </body>
 </html>

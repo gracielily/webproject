@@ -27,29 +27,13 @@ img {
     display: block;
 }
 
-.pokedex-entry-header {
-    display: flex;
-}
-
-.pokedex-entry-header > .img-container {
-    width: 33.33%;
-    height: 300px;
-    background: orange;
-    text-align: center;
-    border-radius: 25px 0 0 25px;
-    justify-content: center;
-    align-items: center;
-}
-
-.pokedex-entry-header > .img-container img {
-    margin-top: 30px;
-}
-
 .pokedex-entry-stats {
-    background: #e6e6e6;
-    width: 66.66%;
     padding: 20px;
     border-radius: 0 25px 25px 0;
+}
+
+.pokedex-entry-stats p {
+    color: #fff;
 }
 
 .type {
@@ -140,7 +124,6 @@ img {
 
 table {
     table-layout: fixed;
-    border-collapse: collapse;
     border: none;
 }
 
@@ -151,6 +134,14 @@ tbody td {
 
 th, td {
     padding: 20px;
+}
+
+table td img {
+    width: 50px;
+}
+
+#gymleaders-table img {
+    width: 150px;
 }
 
 tbody tr:nth-child(odd) {
@@ -167,8 +158,9 @@ thead tr {
     font-size: 18px;
 }
 
+thead tr,
 tbody tr td {
-    text-align: center;
+    text-align: left;
 }
 
 .pokedex-entry-locations img {
@@ -185,7 +177,6 @@ tbody tr td {
 }
 
 .media {
-    width: 400px;
     height: 300px;
     overflow: hidden;
     position: relative;
@@ -193,6 +184,11 @@ tbody tr td {
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+    margin-right: 10px;
+}
+
+.media img {
+     max-width: 100%;
 }
 
 /* Timeline */
@@ -215,8 +211,8 @@ tbody tr td {
 
 .timeline li {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     position: relative;
 }
@@ -236,6 +232,7 @@ tbody tr td {
     position: relative;
     top: -280%;
     left: -200%;
+    background: #fff;
 }
 
 .timeline .active {
@@ -306,7 +303,7 @@ tbody tr td {
     height: 180px;
     margin-top: 150px;
     padding: 40px;
-    background: #54a0ff;
+    background: #5f27cd;
     margin-right: 30px;
 }
 
@@ -332,7 +329,6 @@ tbody tr td {
 }
 
 .body-text {
-    margin-right: 150px;
     font-size: 18px;
 }
 
@@ -617,23 +613,27 @@ h1 {
 #pokedex h1 {
     color: #feca57;
     font-size: 38px;
-    text-align: center;
     display: inline-block;
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
+    margin-top: -20px;
 }
 
-.pokedex-intro > p {
-    font-size: 20px;
+.pokedex-intro p {
+    font-size: 18px;
     font-weight: 600;
-    width: 40%;
+    width: 45%;
     margin: -10px auto 20px auto;
-    background: blue;
+}
+
+.pokedex-intro p:nth-child(2) {
+    color: white;
 }
 
 .location-cards {
     height: 260px;
 }
+
 .location-cards .card-image {
     background: none;
 }
@@ -662,9 +662,7 @@ h1 {
 
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .one {
@@ -732,16 +730,36 @@ ul {
     list-style: none;
 }
 
-div ul {
-    text-align: left;
-    width: 50%;
-    margin: 0 auto;
-}
+/*div ul {*/
+/*    text-align: left;*/
+/*    width: 50%;*/
+/*    margin: 0 auto;*/
+/*}*/
 
-div li {
-    line-height: 1.85em;
-}
+/*div li {*/
+/*    line-height: 1.85em;*/
+/*}*/
 
 #moves li {
     margin-top: 6px;
+}
+
+#single-entry .cards-container {
+    grid-template-columns: 1fr 1fr;
+    column-width: fit-content;
+}
+
+
+#single-entry .card-image {
+    border-radius: 10px;
+    cursor: auto;
+}
+
+#single-entry .card-image img {
+    width: 180px;
+    margin-top: 40px;
+}
+
+#gymleaders thead tr{
+    background: #f368e0 !important;
 }
