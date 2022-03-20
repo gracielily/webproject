@@ -1,0 +1,118 @@
+.galar {
+    background-image: url("../img/locations/galar-field.jpg");
+    background-position: 50% 10%;
+}
+
+.galar-intro {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.galar-intro h1 {
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.explore-galar p {
+    padding: 20px;
+}
+
+#motostoke,
+#motostoke .circles {
+    background: #576574;
+}
+
+
+#ballonlea,
+#ballonlea .circles {
+    background: #f368e0;
+}
+
+#wyndon,
+#wyndon .circles {
+    background: #2e86de;
+}
+
+.location-overview .top-heading {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* STUFF */
+
+.info-col,
+.image-col {
+    width: 50%;
+    display: inline-block;
+}
+
+.info-col {
+    float: left;
+}
+
+.image-col {
+    float: right;
+}
+
+.image-col img {
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.one {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.two {
+    grid-column: 2/4;
+    grid-row: 1;
+    background: red;
+}
+
+.four {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.five {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.six {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.location-cards {
+    height: 260px;
+}
+
+.location-cards .card-image {
+    background: none;
+}
+
+.location-cards .card-info {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+#locations {
+    text-align: center;
+}
+
+#locations p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#locations .card-image img {
+    width: 100%;
+}

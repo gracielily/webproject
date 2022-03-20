@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="/webproject/css/main.css">
+    <link rel="stylesheet" href="/webproject/css/common.css">
 </head>
 <body>
 
@@ -46,7 +46,10 @@
 </nav>
 
 <main>
-    <div class="hero-image wild-area">
+    <link rel="stylesheet" href="/webproject/css/wild-area.css">
+</head>
+<body>
+<div class="hero-image wild-area">
     <div class="hero-text-container">
         <div class="hero-text">
             <h1>Explore the Vast Expanse of the Wild Area</h1>
@@ -55,10 +58,10 @@
     </div>
 </div>
 
-<div class="">
+<div class="wild-area-intro">
     <article>
-        <div class="container" style="display: flex; justify-content: center; align-items: end">
-            <div style="width:50%; padding: 20px;">
+        <div class="container flex">
+            <div class="wild-area-content">
                 <h1>What is the Wild Area?</h1>
                 <p>The Wild Area is the big open area in the Galar Region. It's connected to multiple towns and cities
                     and
@@ -73,19 +76,19 @@
 
                 <p>Throughout the Wild Area you may also find Pokémon Dens that house Max Raid Battles.</p>
             </div>
-            <div style="width: 50%">
+            <div class="wild-area-content">
                 <img class="image-border" src="/webproject/img/wild-area/wild-area.jpg" width="95%"
                      alt="The Wild Area"/>
             </div>
         </div>
 
 
-        <div class="container" style="display: flex; justify-content: center; align-items: end">
-            <div style="width:50%; padding: 20px;">
+        <div class="container flex">
+            <div class="wild-area-content">
                 <img class="image-border" src="/webproject/img/wild-area/wild-area.gif" width="100%"
                      alt="The Wild Area"/>
             </div>
-            <div style="width:50%">
+            <div class="wild-area-content">
                 <h1>Pokémon Galore</h1>
                 <p>You will encounter wild Pokémon on the field in the Wild Areas. However, the Pokémon you encounter
                     will
@@ -95,22 +98,22 @@
 
                 <h3>Some Pokémon you will meet in the Wild Area include:</h3>
                 <ul>
-                    <li>Pikachu</li>
-                    <li>Snorlax</li>
-                    <li>Butterfree</li>
+                    <li>- Pikachu</li>
+                    <li>- Snorlax</li>
+                    <li>- Gyrados</li>
+                    <li>- Butterfree</li>
                 </ul>
 
                 <p>Pokémon typically react differently to you based on the species. Some will charge at you, others will
-                    run
-                    away. You can approach them slowly using the Control Stick or whistle to attract their
+                    run away. You can approach them slowly using the Control Stick or whistle to attract their
                     attention.</p>
             </div>
         </div>
 
-        <div style="background: #54a0ff; padding: 30px; margin-top: 80px;">
+        <div class="weather">
             <div class="container">
-                <h1 style="color: white; text-align: center">Weather</h1>
-                <p style="color:white; line-height: 1.5em; margin-bottom:50px;">The weather in the Wild Area determines
+                <h1 class="white-text align-center">Weather</h1>
+                <p class="white-text">The weather in the Wild Area determines
                     which wild Pokémon can appear and, in some cases, which weather
                     conditions and terrain appear in battle. The weather varies between subareas, and while neighboring
                     subeareas can share the same weather, the weather in each is independently determined. However,
@@ -121,22 +124,21 @@
                     border
                     between them. The weather across the entire Wild Area changes each day at midnight.</p>
             </div>
-            <div class="image-border"
-                 style=" width: 90%; margin: 0 auto; border: 4px solid #2e86de; margin-bottom: 30px">
-                <div style="width: 100%; display: flex; justify-content: space-between; margin: 0 auto;">
-                    <img class="image-border" style="border: 4px solid #2e86de;"
+            <div class="image-border">
+                <div class="weather-imgs">
+                    <img class="image-border"
                          src="/webproject/img/wild-area/sandstorm.jpg" width="100%"
                          alt="The Wild Area"/>
-                    <img class="image-border" style="border: 4px solid #2e86de;"
+                    <img class="image-border"
                          src="/webproject/img/wild-area/hail.jpg" width="100%"
                          alt="The Wild Area"/>
                 </div>
 
-                <div style="width: 100%; display: flex; justify-content: space-between; margin: 0 auto;">
-                    <img class="image-border" style="border: 4px solid #2e86de;"
+                <div class="weather-imgs">
+                    <img class="image-border"
                          src="/webproject/img/wild-area/rain.jpg" width="100%"
                          alt="The Wild Area"/>
-                    <img class="image-border" style="border: 4px solid #2e86de;"
+                    <img class="image-border"
                          src="/webproject/img/wild-area/sunshine.jpg" width="100%"
                          alt="The Wild Area"/>
 
@@ -146,22 +148,24 @@
         </div>
 
         <div class="container max-raid">
-            <h1 style="text-align: center">Max Raid Battles</h1>
-            <img style="display: block; margin: 0 auto; margin-bottom: 40px;" class="image-border" src="/webproject/img/wild-area/max-raid.jpg" width="90%" alt="The Wild Area"/>
+            <h1 class="align-center">Max Raid Battles</h1>
+            <div class="max-raid-intro">
+            <img class="image-border" src="/webproject/img/wild-area/max-raid.jpg" width="90%" alt="The Wild Area"/>
             <p>While in the Wild Area, you may come across glowing <strong>Pokemon Dens</strong>. When this spot gives off a pillar of
                 light, it means a <strong>Dynamax Pokemon</strong> is hiding there.</p>
 
-            <p style="margin-bottom: 30px;">Approaching the Pokemon Den and interacting with it will let you challenge the Dynamax Pokemon inside,
+            <p>Approaching the Pokemon Den and interacting with it will let you challenge the Dynamax Pokemon inside,
                 which will vary by species and strength based on location and weather. You won't know exactly what the
                 Pokemon inside is, but you'll be given a shadow outline of that Pokemon as well as its type.</p>
 
-            <div style="display: flex; justify-content: space-between; margin-bottom: 80px;">
+            </div>
+            <div class="max-raid-imgs">
             <img class="image-border" src="/webproject/img/wild-area/den.jpg" width="48%" alt="The Wild Area"/>
             <img class="image-border" src="/webproject/img/wild-area/max-raid2.jpg" width="48%" alt="The Wild Area"/>
             </div>
 
-            <h2 style="text-align: center">Check out the video below to see a Max Raid Battle in action!</h2>
-            <iframe style="margin-bottom: 30px;" width="100%" height="636"
+            <h2 class="align-center">Check out the video below to see a Max Raid Battle in action!</h2>
+            <iframe width="100%" height="636"
               src="https://www.youtube.com/embed/qWCYB8v4_2E"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
