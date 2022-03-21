@@ -31,6 +31,10 @@
     margin-top: 40px;
 }
 
+.pokedex-entries .card-image img {
+    width: 155px;
+}
+
 #single-entry .cards-container {
     grid-template-columns: 1fr 1fr;
     column-width: fit-content;
@@ -44,8 +48,8 @@
 }
 
 #single-entry .card-image img {
-    width: 180px;
-    margin-top: 40px;
+    width: 240px;
+    margin-top: 30px;
 }
 
 .pokedex-entry-stats {
@@ -128,6 +132,15 @@
 .pokedex-intro p:nth-child(2) {
     color: white;
 }
+
+#single-entry .heading {
+    margin: 30px auto 0 30px;
+}
+
+#pokedex-entry-type {
+    margin: 0 auto 30px auto;
+}
+
 
 #heading-row {
     list-style: none;
