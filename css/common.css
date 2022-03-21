@@ -61,6 +61,10 @@ iframe {
     color: #fff;
 }
 
+.yellow-text {
+    color: #feca57;
+}
+
 .breadcrumb {
     color: #fff;
     text-decoration: none;
@@ -314,9 +318,11 @@ tbody tr td {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .things-list {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
+    text-align: left;
 }
 
 .footer {

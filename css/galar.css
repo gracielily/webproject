@@ -13,24 +13,40 @@
     margin-bottom: 50px;
 }
 
+.what-is-galar,
+.explore-galar {
+    margin-top: 60px;
+}
+.explore-galar h1 {
+    padding: 0 20px;
+}
+
 .explore-galar p {
     padding: 20px;
+    margin-top: -20px;
 }
 
 #motostoke,
-#motostoke .circles {
+.motostoke-stadium{
     background: #576574;
 }
 
 
-#ballonlea,
-#ballonlea .circles {
+#ballonlea {
     background: #f368e0;
 }
 
-#wyndon,
-#wyndon .circles {
+#wyndon {
     background: #2e86de;
+}
+
+.location-overview .flex {
+    align-items: center;
+}
+
+.location-overview .flex div {
+    padding: 20px;
+    width: 50%;
 }
 
 .location-overview .top-heading {
@@ -38,59 +54,50 @@
     margin: 0 auto;
 }
 
-/* STUFF */
-
-.info-col,
-.image-col {
-    width: 50%;
-    display: inline-block;
+.location-intro {
+    margin: 80px auto 30px auto;
+    text-align: center;
 }
 
-.info-col {
-    float: left;
+.location-intro p {
+    text-align: left;
+    margin: 0 auto;
+    width: 70%;
 }
 
-.image-col {
-    float: right;
+.location-intro img {
+    margin-bottom: 40px;
 }
 
-.image-col img {
-    width: 100%;
+.location-intro a {
+    color: #576574;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.motostoke-stadium,
+.glimwood-tangle {
+    margin-bottom: 40px;
 }
 
-.one {
-    grid-column: 1;
-    grid-row: 1;
-}
+/*.info-col,*/
+/*.image-col {*/
+/*    width: 50%;*/
+/*    display: inline-block;*/
+/*}*/
 
-.two {
-    grid-column: 2/4;
-    grid-row: 1;
-    background: red;
-}
+/*.info-col {*/
+/*    float: left;*/
+/*}*/
 
-.four {
-    grid-column: 1;
-    grid-row: 2;
-}
+/*.image-col {*/
+/*    float: right;*/
+/*}*/
 
-.five {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.six {
-    grid-column: 3;
-    grid-row: 2;
-}
+/*.image-col img {*/
+/*    width: 100%;*/
+/*}*/
 
 .location-cards {
-    height: 260px;
+    height: 300px;
 }
 
 .location-cards .card-image {
@@ -115,4 +122,38 @@
 
 #locations .card-image img {
     width: 100%;
+}
+
+.places-interest ul {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.places-interest h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.places-interest {
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.glimwood-tangle {
+    text-align: left;
+}
+
+.glimwood-tangle p {
+    margin: 0;
+    width: 95%;
+}
+
+.london img:first-child {
+    margin-bottom: -30px;
+    margin-top: 40px
+}
+
+.london {
+    margin-bottom: 60px;
 }
