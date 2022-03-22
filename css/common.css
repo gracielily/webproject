@@ -1,3 +1,5 @@
+/* Common CSS Styling used throughout the site */
+
 body {
     background: #f8f8ff;
     font-family: 'Open Sans', sans-serif;
@@ -65,8 +67,11 @@ iframe {
     color: #feca57;
 }
 
+.margin-auto {
+    margin: 0 auto;
+}
+
 .breadcrumb {
-    color: #fff;
     text-decoration: none;
 }
 
@@ -104,9 +109,8 @@ ul {
     margin-top: -10px;
 }
 
-
 #none {
-    color: black;
+    color: #000;
 }
 
 #fire {
@@ -118,11 +122,11 @@ ul {
 }
 
 #rock {
-    background: brown;
+    background: #A52A2AFF;
 }
 
 #normal {
-    background: gray;
+    background: #808080FF;
 }
 
 #flying {
@@ -162,7 +166,7 @@ ul {
 }
 
 #dark {
-    background: black;
+    background: #000;
 }
 
 #grass {
@@ -175,7 +179,7 @@ ul {
 
 #ice {
     background: aliceblue;
-    color: black;
+    color: #fff;
 }
 
 #water {
@@ -229,11 +233,8 @@ tbody tr td {
 }
 
 #navigation ul {
-    justify-content: space-between;
-    display: flex;
     list-style: none;
     width: 80%;
-    margin: 0 auto;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -321,7 +322,6 @@ tbody tr td {
 
 .things-list {
     width: 60%;
-    margin: 0 auto;
     text-align: left;
 }
 
@@ -344,7 +344,7 @@ tbody tr td {
 }
 
 .card-entries {
-    margin: 50px -100px 0px -100px;
+    margin: 50px -100px 0 -100px;
     background: #222f3e;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -359,7 +359,7 @@ tbody tr td {
     margin: 20px;
     height: 320px;
     background-color: #fff;
-    box-shadow: rgba(0 0 0 / 22%) 0px 15px 15px;
+    box-shadow: rgba(0 0 0 / 22%) 0 15px 15px;
     cursor: pointer;
     border-radius: 10px;
 }
@@ -386,21 +386,11 @@ tbody tr td {
     margin-top: 20px;
     padding: 0 30px;
     text-align: left;
-
 }
 
 .card .btn {
     margin-top: 40px;
     cursor: pointer;
-    text-align: center;
-}
-
-.card .btn a {
-    text-decoration: none;
-    color: rgb(136, 132, 132);
-    border: 1px solid black;
-    background: white;
-    border-radius: 15%;
     text-align: center;
 }
 

@@ -1,5 +1,4 @@
-/* WILD AREA */
-
+/* CSS for Wild Area Page */
 
 .wild-area {
     background-image: url("../img/wild-area/wild-area.png");
@@ -10,7 +9,6 @@
     align-items: end;
 }
 
-
 .wild-area .image-border {
     width: 90%;
     margin: 0 auto 30px auto;
@@ -18,7 +16,6 @@
 }
 
 .wild-area .weather {
-    margin: 0 auto;
     width: 100%;
 }
 
@@ -40,12 +37,6 @@
 
 .weather div.image-border {
     width: 90%;
-    margin: 0 auto;
-}
-
-.weather-imgs {
-    width: 100%;
-    margin: 0 auto;
 }
 
 .wild-area-content p:last-child {
@@ -59,9 +50,6 @@
 
 .weather-imgs {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
 }
 
 .max-raid-intro p:last-child {
@@ -74,8 +62,6 @@
 }
 
 .max-raid-imgs {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 80px;
 }
 
