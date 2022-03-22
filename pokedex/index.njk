@@ -7,28 +7,28 @@ eleventyNavigation:
 {% import '_globals.njk' as global_vars %}
 <link rel="stylesheet" href="{{ '/css/pokedex.css' | url }}">
 </head>
-<body>
-<div id="pokedex">
-    <div class="top-heading">
-        <div class="top-heading-block container">
-            <ul id="heading-row">
-                <li id="red-circle"></li>
-                <li id="yellow-circle"></li>
-                <li id="green-circle"></li>
-            </ul>
-            <div id="blue-circle"></div>
-            <h1 class="yellow-text align-center">Sword & Shield Pokédex</h1>
-        </div>
-    </div>
-    <div class="container">
-        <section class="pokedex-intro">
-            <p>Here you'll find a selection of Pokémon that are exclusive to Pokémon Sword & Shield.</p>
-            <h2 class="white-text">Click on an entry below to learn more!</h2>
-        </section>
 
-        <div>
-            <div class="pokedex-entries">
-                <div class="cards-container container">
+<body>
+    <main id="pokedex">
+        <section class="top-heading">
+            <div class="top-heading-block container">
+                <ul id="heading-row">
+                    <li id="red-circle"></li>
+                    <li id="yellow-circle"></li>
+                    <li id="green-circle"></li>
+                </ul>
+                <div id="blue-circle"></div>
+                <h1 class="yellow-text align-center">Sword & Shield Pokédex</h1>
+            </div>
+        </section>
+        <div class="container">
+            <section class="pokedex-intro">
+                <p>Here you'll find a selection of Pokémon that are exclusive to Pokémon Sword & Shield.</p>
+                <h2 class="white-text">Click on an entry below to learn more!</h2>
+            </section>
+
+            <section class="pokedex-entries">
+                <article class="cards-container container">
                     {% for pokemon in global_vars.pokedexEntries %}
 
                         <a href="{{ '../pokedex/' + pokemon.name | lower | url }}">
@@ -45,10 +45,7 @@ eleventyNavigation:
                             </div>
                         </a>
                     {% endfor %}
-
-                </div>
-            </div>
+                </article>
+            </section>
         </div>
-
-    </div>
-</div>
+    </main>
