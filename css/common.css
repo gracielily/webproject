@@ -233,6 +233,8 @@ tbody tr td {
 }
 
 #navigation ul {
+    justify-content: space-between;
+    display: flex;
     list-style: none;
     width: 80%;
     text-transform: uppercase;

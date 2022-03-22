@@ -132,6 +132,10 @@
     width: 95%;
 }
 
+#morgrem {
+    transform: scaleX(-1);
+}
+
 .london img:first-child {
     margin-bottom: -30px;
     margin-top: 40px
