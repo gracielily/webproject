@@ -1,3 +1,4 @@
+/* CSS for Galar Pages */
 .galar {
     background-image: url("../img/locations/galar-field.jpg");
     background-position: 50% 10%;
@@ -17,6 +18,7 @@
 .explore-galar {
     margin-top: 60px;
 }
+
 .explore-galar h1 {
     padding: 0 20px;
 }
@@ -27,10 +29,9 @@
 }
 
 #motostoke,
-.motostoke-stadium{
+.motostoke-stadium {
     background: #576574;
 }
-
 
 #ballonlea {
     background: #f368e0;
@@ -78,23 +79,10 @@
     margin-bottom: 40px;
 }
 
-/*.info-col,*/
-/*.image-col {*/
-/*    width: 50%;*/
-/*    display: inline-block;*/
-/*}*/
-
-/*.info-col {*/
-/*    float: left;*/
-/*}*/
-
-/*.image-col {*/
-/*    float: right;*/
-/*}*/
-
-/*.image-col img {*/
-/*    width: 100%;*/
-/*}*/
+#kabu {
+    float: right;
+    transform: scaleX(-1);
+}
 
 .location-cards {
     height: 300px;
@@ -135,11 +123,6 @@
     margin-bottom: 20px;
 }
 
-.places-interest {
-    padding: 40px;
-    margin-bottom: 50px;
-}
-
 .glimwood-tangle {
     text-align: left;
 }
@@ -147,6 +130,10 @@
 .glimwood-tangle p {
     margin: 0;
     width: 95%;
+}
+
+#morgrem {
+    transform: scaleX(-1);
 }
 
 .london img:first-child {
