@@ -1,0 +1,60 @@
+.guide {
+    background-image: url("../img/guide-background.jpg");
+    background-position: 50% 12%;
+}
+
+.helpful-guide {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.helpful-guide table {
+    width: 100%;
+}
+
+#pokeballs thead tr {
+    background: #ee5253 !important;
+}
+
+#gymleaders-table img {
+    width: 150px;
+}
+#gymleaders thead tr {
+    background: #f368e0 !important;
+}
+
+.mini-menu {
+    position: sticky;
+    top: 0;
+    float: right;
+    height: 180px;
+    margin-top: 350px;
+    padding: 40px;
+    background: #5f27cd;
+    margin-right: 30px;
+}
+
+.mini-menu ul {
+    padding: 0;
+}
+
+.mini-menu li {
+    padding: 10px 20px 10px 0px;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+}
+
+.mini-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.mini-menu a:hover {
+    color: #f2d335;
+}
+
+.body-text {
+    font-size: 18px;
+}

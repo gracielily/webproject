@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="{{ '../../css/pokedex.css' | url }}">
+</head>
+<body>
+<section id="pokedex">
+    <div class="top-heading">
+        <div class="top-heading-block container">
+            <ul id="heading-row">
+                <li id="red-circle"></li>
+                <li id="yellow-circle"></li>
+                <li id="green-circle"></li>
+            </ul>
+            <div id="blue-circle"></div>
+            <h1 class="align-center">{{ pokemon.name }} Pokedex Entry</h1>
+        </div>
+    </div>
+    <br/>
+
+    <div class="container">
+        <p><a class="breadcrumb" href="../"><i class="fa fa-arrow-left"></i> Back to Pokedex</a></p>
+        <div class="pokedex-entries" id="single-entry">
+            <div class="cards-container container">
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{ '../../img/pokemon/' + pokemon.name | lower + '-pokedex.png' | url }}"
+                             alt="{{ "image of " + pokemon.name }} "/>
+                    </div>
+                </div>
+
+                <div class="white-text">
+                    <div class="heading">
+                        <h2 class="white-text">#{{ pokemon.id }}</h2>
+                        <h1>{{ pokemon.name }}</h1>
+                        <p id="pokedex-entry-type"><span id="{{ pokemon.type | lower }}"
+                                 class="type">{{ pokemon.type }}</span></p>
+                        <p>{{ pokemon.description }}</p>
+                        <p><strong>Height: </strong>{{ pokemon.height }}</p>
+                        <p><strong>Weight: </strong>{{ pokemon.weight }}</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pokedex-entry-stats align-center" id="{{ pokemon.type | lower }}">
+
+                <div>
+                    <h2 class="white-text">Species</h2>
+                    <p><strong>{{ pokemon.species }}</strong></p>
+                </div>
+                <div>
+                    <h2 class="white-text">Abilities</h2>
+                    {% for ability in pokemon.abilities %}
+                        <p><strong>{{ ability }}</strong></p>
+                    {% endfor %}
+                </div>
+                <div>
+                    <h2 class="white-text">Locations</h2>
+                    {% for location in pokemon.locations %}
+                        <p><strong>{{ location }}</strong></p>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="pokedex-entry-overview">
+                <h1>Overview</h1>
+                <div class="overview-content">
+                    <p>{{ pokemon.overview[0] }}</p>
+                    <p>{{ pokemon.overview[1] }}</p>
+                    <div>
+                        <img src="{{ '../../img/pokemon/' + pokemon.name | lower + '.png' | url }}"
+                             alt={{ 'image of ' + pokemon.name }} width="100%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pokedex-gallery">
+                <h1 class="align-center">Gallery</h1>
+                <div class="wrapper">
+                    <div class="media">
+                        <a href="{{ '../../img/pokemon/' + pokemon.name | lower + '-gallery1.jpg' | url }}" target="_blank">
+                            <img src="{{ '../../img/pokemon/' + pokemon.name | lower + '-gallery1.jpg' | url }}"
+                                 alt="{{ "image of " + pokemon.name }}"/>
+                        </a>
+                    </div>
+                    <div class="media">
+                        <a href="{{ '../../img/pokemon/' + pokemon.name | lower + '-gallery2.jpg' | url }}" target="_blank">
+                            <img src="{{ '../../img/pokemon/' + pokemon.name | lower + '-gallery2.jpg' | url }}"
+                                 alt="{{ "image of " + pokemon.name }}"/>
+                        </a>
+                    </div>
+                    <div class="media">
+                        <a href="{{ '../../img/pokemon/' + pokemon.name | lower + '-gallery3.jpg' | url }}" target="_blank">
+                            <img src="{{ '../../img/pokemon/' + pokemon.name | lower + '-gallery3.jpg' | url }}"
+                                 alt="{{ "image of " + pokemon.name }}"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

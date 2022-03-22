@@ -1,0 +1,498 @@
+{% set pokedexEntries = [
+    {
+        "id": "077",
+        "name": "Ponyta",
+        "type": "Fairy",
+        "height": "1.0m",
+        "weight": "30.0kg",
+        "species": "Horse",
+        "abilities": ["Runaway", "Gleam"],
+        "locations": ["Ballonlea", "Glimwood Tangle"],
+        "description": "This Pokémon will look into your eyes and read the contents of your heart.
+        If it finds evil there, it promptly hides away.",
+        "overview": ["Ponyta are relatively lightweight for their size, as they have extraordinary jumping abilities and
+        are capable of leaping tall buildings in a single bound. However, a newborn Ponyta is a weak runner and is
+        actually barely able to stand. It gradually strengthens its legs and becomes faster by chasing after its
+        parents and jumping over grass that grows taller by the day. Ponyta has the ability to absorb life energy and
+        store it in its mane, which causes it to glow. It never trusts wicked people, who it turns away and vanishes
+        from, whenever it senses one with evil thoughts.",
+        "If it accompanies with a Trainer, it means it knows the Trainer is a goodhearted person.
+        Despite that they also have a tendency to be very shy and don't make themselves known to people
+        very much and when in distress or in need of help they send psychic visions to those they trust
+        regardless of the distance."]
+    },
+    {
+        "id": "110",
+        "name": "Weezing",
+        "type": "Poison",
+        "height": "3.0m",
+        "weight": "16.0kg",
+        "species": "Poison Gas",
+        "abilities": ["Stench", "Misty Surge"],
+        "locations": ["East Lake Axewell", "Lake of Outrage", "Slumbering Weald"],
+        "description": "Long ago, during a time when droves of factories fouled the air with pollution,
+        Weezing changed into this form for some reason.",
+        "overview": ["Weezing absorbs polluted air from factories. It has a gray body with the skull, crossbones, and
+        ring in the color yellow. Both heads have a hat-like tube located on top of them that constantly
+        releases purified air. Five green puffs of poison gas clouds can be seen floating around it. The larger head
+        has a cloud-like mustache, while the smaller head has clouds on its face in the shape of eyebrows and a beard.
+        Galarian Weezing consumes particles from the polluted air.", "Outside of battle, Weezing expels clean air instead of poison.
+        The toxins within Weezing's body are accumulated into poison gas clouds that leaks and drifts around it.
+        The gas is Weezing's best weapon in battle, being potent enough to stun and immobilize an opponent with
+        just a whiff. Galarian Weezing preys on Trubbish for the fumes it produces."]
+    },
+    {
+        "id": "813",
+        "name": "Scorbunny",
+        "type": "Fire",
+        "height": "0.3m",
+        "weight": "4.5kg",
+        "species": "Rabbit",
+        "abilities": ["Blaze", "Lberto"],
+        "locations": ["Postwick"],
+        "description": "Once Scorbunny is ready for battle, the pads above
+        its nose and under its feet give off intense heat. The soles on its feet are also said to bring good luck.",
+        "overview":
+        ["Scorbunny is a rabbit-like Pokémon that has a predominantly white body with orange and yellow
+        markings on its ears, toes, and neck. The markings on its neck resemble a collar. It has buckteeth, an orange
+        nose, and irises, black sclerae, as well as a yellow band shape across its nose, resembling a bandage. It has
+        long legs with long feet and the same yellow band on its nose under each paw pad. It also has a small, white, poof-like tail.
+        Scorbunny loves to run and is filled with energy. A warm-up run can cause the fire energy in Scorbunny to start coursing
+        through its body, allowing it to fight at full power.", "The pads on Scorbunny's feet can get so hot that it is capable of using them to burn opponents
+        with a kick and it can start small fires from underneath its feet. The anime has shown that its heat pads can also thaw others out of
+        ice. By using its powerful legs, Scorbunny can run and jump around its opponents to confuse and disorient them. It is a rare Pokémon that is
+        found more often under the ownership of Trainers. According to the anime, the soles on Scorbunny's feet are believed to bring good luck. "]
+    },
+    {
+        "id": "810",
+        "name": "Grookey",
+        "type": "Grass",
+        "height": "0.3m",
+        "weight": "5.0kg",
+        "species": "Monkey",
+        "abilities": ["Overgrow", "Grassy Surge"],
+        "locations": ["Postwick"],
+        "description": "Grookey's green fur can create energy from the sunlight, similar to how plants use their green
+        leaves to photosynthesize. It is said to be full of boundless curiosity.",
+        "overview":
+        ["Grookey is a small, monkey-like Pokémon with a green body, a brown tail, brown, wedge-shaped ears, orange
+        hands and feet, and an orange snout. Each of its hands has five fingers, while each of its feet has three toes.
+        It has two large eyes with black irises and white pupils and sclerae. A lime green mask frames its eyes and,
+        in a small bump above its snout, extends towards its forehead. Grookey has two, leaf-shaped hair tufts that
+        hold a stick on the top of its head. Besides using it when attacking, Grookey beats this stick rhythmically
+        against the surfaces of all sorts of objects.",
+            "This has been observed to cause grass to grow, and wilted flowers and leaves seem to regain their color
+            when Grookey drums nearby. In the anime, it can even restore weakened plant-like Pokémon such as Bellsprout.
+            The stick used to be a branch from a forest where troops of Grookey lived, and it has a special
+            power due to being exposed to the energy within Grookey's body. Grookey live deep in forests.
+            However, due to its status as a starter Pokémon, a wild Grookey is hard to come by and it is generally
+            seen under the care of Trainers."]
+    },
+    {
+        "id": "816",
+        "name": "Sobble",
+        "type": "Water",
+        "height": "0.3m",
+        "weight": "4.0kg",
+        "species": "Lizard",
+        "abilities": ["Torrent", "Sniper"],
+        "locations": ["Postwick"],
+        "description": "When Sobble touches watery substances, its body takes on the color of its surroundings.
+        Because it's timid, it produces large amounts of tears that cause it to become invisible.",
+        "overview":
+        ["Sobble is a small Pokémon that has light-blue skin with darker teal patches and a lighter blue belly and face.
+        It has similar teal eyes with white pupils and sclerae. Sobble also has a yellow fin-like protrusion from the top
+        of its head bordered in dark blue, as well as a curled blue tail tipped in the same dark blue. Sobble has thin limbs,
+        each of them ending in two thin appendages. It can use these to stick to walls and easily climb them.
+        It can run around as both a quadruped and a biped, and use its forelimbs as arms. Sobble has the ability to
+        camouflage itself in water where it hides itself. When it touches the water, Sobble's body changes its
+        patterns and colors.", "This ability allows Sobble to blend into its surroundings. Due to being a bit timid,
+        should Sobble get nervous or embarrassed, it will secrete water from its body like sweat in order to
+        disappear into its surroundings. Sobble's tears can make others cry; the effect is so powerful that its
+        tears are said to be as potent as 100 onions. Should it feel threatened, Sobble will start bawling and
+        spreading its tears around the area, causing anyone near it to start crying uncontrollably.
+        It will use this distraction as means to escape. Sobble is scarce in the wild and are typically more
+        common in captivity."]
+    },
+    {
+        "id": "823",
+        "name": "Corviknight",
+        "type": "Flying",
+        "height": "2.2m",
+        "weight": "75kg",
+        "species": "Bird",
+        "abilities": ["Pressure", "Unnerve", "Mirror Ability"],
+        "locations": ["Dusty Bowl", "Lake of Outrage", "Slumbering Weald", "Giant's Cap"],
+        "description": "This Pokémon reigns supreme in the skies of the Galar region. The black luster of its
+        steel body could drive terror into the heart of any foe.",
+        "overview":
+        ["Corviknight is a large, avian Pokémon resembling a raven. Most of its body is a lustrous black, but its lower
+        beak and legs have a matte color. Its feathers are tempered with steel. Its mantle, breast, belly, flanks, and
+        scapular feathers are smooth and resemble plate armor. Corviknight's talons, head, and upper beak are similarly
+        armored. It has a crest above its eyes that resembles a crown, and a ruff of feathers on its throat that resemble
+         a beard. Corviknight's eyes have white pupils, red irises, and black sclerae.", "
+It is said to be the strongest bird Pokémon in the Galar region, being able to scare off any Pokémon that tries to challenge it.
+Due to its intelligence and flying skills, Corviknight serves a company called Galar Taxi, where it transports people
+from one location to another. Corviknight preys on Bunnelby. It has violent territorial clashes with Skarmory."]
+    },
+    {
+        "id": "860",
+        "name": "Morgrem",
+        "type": "Fairy",
+        "height": "0.8m",
+        "weight": "12.5kg",
+        "species": "Fairy",
+        "abilities": ["Prankster", "Pickpocket"],
+        "locations": ["Glimwood Tangle", "Bridge Field", "Dusty Bowl", "Giant's Mirror"],
+        "description": "With sly cunning, it tries to lure people into the woods. Some believe it to have the power
+        to make crops grow.",
+        "overview":
+        ["Morgrem is a somewhat humanoid Pokémon with a magenta upper body and a light green lower body divided by a
+        zig-zag line. It has large muscular arms with hands that have three very sharp fingers and round feet that each have three toes.
+        Just like its pre-evolution, Morgrem has prominently large ears, large eyes with red pupils instead of the usual black, a long nose
+        with a single nostril, although much longer and pointed upward, and a mouth with extremely sharp razor fangs.", "Its face mask and bat-wing
+        extend to be fully grown long, black hair with a bang that covers its left eye. The end of the hair is shaped like a pole arm.
+        It is known to do false acts of forgiveness, luring in opponents and getting down to its knees, before stabbing them with its hair.
+        It is believed that Morgrem has the ability to make plants grow."]},
+
+    {
+        "id": "888",
+        "name": "Zacian",
+        "type": "Steel",
+        "height": "2.8m",
+        "weight": "110kg",
+        "species": "Dog",
+        "abilities": ["Pressure", "Intrepid Sword"],
+        "locations": ["Tower Summit"],
+        "description": "Known as a legendary hero, this Pokémon absorbs metal particles, transforming them into a
+        weapon it uses to battle.",
+        "overview":
+        ["In its Hero of Many Battles form, Zacian is a large cyan lupine Pokémon with yellow eyes, a pink tail,
+        and pink braids going down the side of its body. Two pink fringes of fur are present on its back. Battle
+        scars are visible on its sides, and part of its left ear is missing. In its Crowned Sword form, the fringes of
+        fur on its back become wing-like armor and its braids grow to resemble ribbons. Additionally, its head is
+        covered by a golden helmet, and it carries a golden sword decorated to resemble Zacian's colors. According
+        to legends, Zacian is believed to be either the elder sister or rival of Zamazenta.", "It is also known as the
+        Fairy King's Sword by friends and foes due to it being able to cut down anything in one strike. It can turn
+        itself into a statue in order to slumber until needed and is capable of flying. Zacian can attack so gracefully
+        the movements can captivate its opponents, which has been compared to a graceful dance. The sword it holds
+        in its mouth can cut through anything with a sharp edge capable of harming even the thick scales of Dragon-type
+        Pokémon as if they were just paper."]
+    },
+    {
+        "id": "889",
+        "name": "Zamazenta",
+        "type": "Fighting",
+        "height": "2.9m",
+        "weight": "210kg",
+        "species": "Dog",
+        "abilities": ["Pressure", "Dauntless Shield"],
+        "locations": ["Tower Summit"],
+        "description": " 	In times past, it worked together with a king of the people to save the Galar region.
+        It absorbs metal that it then uses in battle.",
+        "overview":
+        ["In its Hero of Many Battles form, Zamazenta is a very large magenta lupine Pokémon with yellow eyes and a bulkier
+        frame than Zacian's and a ponytail on its head. Its forelimbs, tail, and ponytail are all a deep blue. Its body
+        is covered in battle scars and part of its right ear is missing. Its head and neck have thick fur resembling a shield.
+        The Crowned Shield form causes Zamazenta to generate a set of golden armor covering the front of its body like a shield.
+        By absorbing metal particles, Zamazenta can change to its Crowned Shield form in battle.", "In legends, it is known as
+        the Fighting Master's Shield due to its ability to deflect any physical attacks. Zamazenta is both feared and respected by all.
+        By becoming a statue, it can rest for eons; even while asleep, it can cast illusions including a projection of itself.
+        Zamazenta is capable of flying. It is variously believed to be the younger sibling or the rival of Zacian.
+        Its regal and majestic movements enable it to overwhelm opponents who face off against it"]
+    }
+] %}
+
+{% set pokeballs = [
+    {
+        "name": " Poke Ball",
+        "effect": " A device for catching wild Pokemon. It's thrown like a ball at a Pokemon, comfortably encapsulating its form",
+        "how": "Any Poke Center"
+    },
+    {
+        "name": " Great Ball",
+        "effect": " A good, high-performance Poke Ball that provides a higher success rate for catching Pokemon",
+        "how": "Any Poke Center"
+    },
+    {
+        "name": " Ultra Ball",
+        "effect": "An ultra-high-performance Poke Ball that provides a higher success rate for catching Pokemon than a Great Ball",
+        "how": "Any Poke Center"
+    },
+    {
+        "name": "Master Ball",
+        "effect": " A unique Pokeball that can capture any Pokemon without fail.",
+        "how": "Get it after completing the Pokemon League"
+    },
+    {
+        "name": " Premier Ball",
+        "effect": " A somewhat rare Poke Ball that was made as a commemorative item used to celebrate an event of some sort.",
+        "how": "Free for every purchase of 10 Poke Balls"
+    },
+    {
+        "name": "Lure Ball",
+        "effect": "A Poke Ball that is good for catching Pokemon that you reel in with a rod while out fishing",
+        "how": " Hulbury"
+    },
+    {
+        "name": " Friend Ball",
+        "effect": " A strange Poke Ball that will make the wild Pokemon caught with it more friendly toward you immediately.",
+        "how": "Motostoke Poke Center"
+    },
+    {
+        "name": "Repeat Ball",
+        "effect": "A somewhat different Poke Ball that works especially well on a Pokemon species that has been caught before",
+        "how": "Wyndon Poke Center"
+    },
+    {
+        "name": "Quick Ball",
+        "effect": " A somewhat different Poke Ball that has a more successful catch rate if used at the start of an encounter",
+        "how": "Wyndon Poke Center"
+    },
+    {
+        "name": "Net Ball",
+        "effect": " A somewhat different Poke Ball that is more effective when attempting to catch Water- or Bug-type Pokemon",
+        "how": "Motostoke Poke Center"
+    },
+    {
+        "name": "Luxury Ball",
+        "effect": "A particularly comfortable Poke Ball that makes a wild Pokemon quickly grow friendlier after being caught",
+        "how": "Wyndon Poke Center"
+    },
+    {
+        "name": "Nest Ball",
+        "effect": "A somewhat different Poke Ball that becomes more effective the lower the level of the wild Pokemon.",
+        "how": " Mototstoke Poke Center"
+    },
+    {
+        "name": "Dusk Ball",
+        "effect": "A somewhat different Poke Ball that makes it easier to catch wild Pokemon at night or caves",
+        "how": "Purchase at The Wild Area"
+    },
+    {
+        "name": "Heal Ball",
+        "effect": "A remedial Poke Ball that restores the HP of a Pokemon caught with it and eliminates any status",
+        "how": "Motostoke Poke Center"
+    },
+    {
+        "name": "Dive Ball",
+        "effect": "A somewhat different Poke Ball that works especially well when catching Pokemon that live underwater.",
+        "how": "Hammerlocke Poke Center, The Wild Area"
+    },
+    {
+        "name": "Level Ball",
+        "effect": "A Poke Ball that makes it easier to catch Pokemon that are at a lower level then your own Pokemon.",
+        "how": "Hammerlocke"
+    },
+    {
+        "name": "Heavy Ball",
+        "effect": "A Poke Ball that is better than usual at catching very heavy Pokemon.",
+        "how": " Stow on Side"
+    },
+    {
+        "name": "Moon Ball",
+        "effect": "A Poke Ball that will make it easier to catch Pokemon that can evolve using a Moon Stone.",
+        "how": "Circhester"
+    },
+    {
+        "name": "Timer Ball",
+        "effect": "A Poke Ball that becomes progressively more effective at catching Pokemon the more turns taken in battle.",
+        "how": "Purchase at The Wild Area"
+    },
+    {
+        "name": "Fast Ball",
+        "effect": "A Poke Ball that makes it easier to catch Pokemon that are usually very quick to run away.",
+        "how": "Finish 10 Rotom Rallies"
+    },
+    {
+        "name": "Beast Ball",
+        "effect": "A different Poke Ball that has a low success rate for catching a Pokemon",
+        "how": "Get After Becoming Champion"
+    }
+] %}
+
+{% set locations = ["Motostoke", "Ballonlea", "Wyndon"] %}
+
+
+{% set starters = [
+
+    {
+        "name": "Grookey",
+        "tagline": "A Grass-type Chimp Pokémon that is mischievous and curious"
+    },
+    {
+        "name": "Scorbunny",
+        "tagline": "A Fire-type Rabbit Pokémon that is bursting with energy"
+    },
+    {
+        "name": "Sobble",
+        "tagline": "A Water-type Lizard Pokémon that stealth attacks from the water"
+    }
+] %}
+
+{% set moveTypes = [
+    {
+        "name": "Normal",
+        "super" : [""],
+        "not": ["Rock", "Steel", "Ghost"],
+        "resistant": ["Ghost"],
+        "weak": ["Fighting"]
+    },
+    {
+        "name": "Fighting",
+        "super" : ["Normal", "Rock", "Steel", "Ice", "Dark"],
+        "not": ["Flying", "Poison", "Bug", "Psychic", "Fairy", "Ghost"],
+        "resistant": ["Rock", "Bug", "Dark"],
+        "weak": ["Flying", "Psychic", "Fairy"]
+    },
+    {
+        "name": "Flying",
+        "super" : ["Fighting", "Bug", "Grass"],
+        "not": ["Rock", "Steel", "Electric"],
+        "resistant": ["Fighting", "Bug", "Grass", "Ground"],
+        "weak": ["Rock", "Electric", "Ice"]
+    },
+    {
+        "name": "Poison",
+        "super" : ["Grass", "Fairy"],
+        "not": ["Poison", "Ground", "Rock", "Ghost", "Steel"],
+        "resistant": ["Fighting", "Poison", "Grass", "Fairy"],
+        "weak": ["Ground", "Psychic"]
+    },
+    {
+        "name": "Ground",
+        "super" : ["Poison", "Rock", "Steel", "Fire", "Electric"],
+        "not": ["Bug", "Grass", "Flying"],
+        "resistant": ["Poison", "Rock", "Electric"],
+        "weak": ["Water", "Grass", "Ice"]
+    },
+    {
+        "name": "Rock",
+        "super" : ["Flying", "Bug", "Fire", "Ice"],
+        "not": ["Fighting", "Ground", "Steel"],
+        "resistant": ["Normal", "Flying", "Poison", "Fire"],
+        "weak": ["Fighting", "Ground", "Steel", "Water", "Grass"]
+    },
+    {
+        "name": "Bug",
+        "super" : ["Grass", "Psychic", "Dark"],
+        "not": ["Fighting", "Flying", "Poison", "Ghost", "Steel", "Fire", "Fairy"],
+        "resistant": ["Fighting", "Ground", "Grass"],
+        "weak": ["Flying", "Rock", "Fire"]
+    },
+    {
+        "name": "Ghost",
+        "super": ["Ghost", "Psychic"],
+        "not" : ["Normal", "Dark"],
+        "resistant": ["Poison", "Bug", "Normal", "Fighting"],
+        "weak": ["Ghost", "Dark"]
+    },
+    {
+        "name": "Steel",
+        "super": ["Rock", "Ice", "Fairy"],
+        "not" : ["Steel", "Fire", "Water", "Electric"],
+        "resistant": ["Normal", "Flying", "Rock", "Bug", "Steel", "Grass", "Psychic", "Ice", "Dragon", "Fairy", "Poison"],
+        "weak": ["Fighting", "Ground", "Fire"]
+    },
+    {
+        "name": "Fire",
+        "super": ["Bug", "Steel", "Grass", "Ice"],
+        "not" : ["Rock", "Fire", "Water", "Dragon"],
+        "resistant": ["Bug", "Steel", "Fire", "Grass", "Ice"],
+        "weak": ["Ground", "Rock", "Water"]
+    },
+    {
+        "name": "Water",
+        "super": ["Ground", "Rock", "Fire"],
+        "not" : ["Water", "Grass", "Dragon"],
+        "resistant": ["Steel", "Fire", "Water", "Ice"],
+        "weak": ["Grass", "Electric"]
+    },
+    {
+        "name": "Grass",
+        "super": ["Ground", "Rock", "Water"],
+        "not" : ["Flying", "Poison", "Bug", "Steel", "Fire", "Grass", "Dragon"],
+        "resistant": ["Ground", "Water", "Grass", "Electric"],
+        "weak": ["Flying", "Poison", "Bug", "Fire", "Ice"]
+    },
+    {
+        "name": "Electric",
+        "super": ["Flying", "Water"],
+        "not" : ["Grass", "Electric", "Dragon", "Ground"],
+        "resistant": ["Flying", "Steel", "Electric"],
+        "weak": ["Ground"]
+    },
+    {
+        "name": "Psychic",
+        "super": ["Fighting", "Poison"],
+        "not" : ["Steel", "Psychic", "Dark"],
+        "resistant": ["Fighting", "Psychic"],
+        "weak": ["Bug", "Ghost", "Dark"]
+    },
+    {
+        "name": "Ice",
+        "super": ["Flying", "Ground", "Grass", "Dragon"],
+        "not" : ["Steel", "Fire", "Water", "Ice"],
+        "resistant": ["Ice"],
+        "weak": ["Fighting", "Rock", "Steel", "Fire"]
+    },
+    {
+        "name": "Dragon",
+        "super": ["Dragon"],
+        "not" : ["Steel", "Fairy"],
+        "resistant": ["Fire", "Water", "Grass", "Electric"],
+        "weak": ["Ice", "Dragon", "Fairy"]
+    },
+    {
+        "name": "Dark",
+        "super": ["Ghost", "Psychic"],
+        "not" : ["Fighting", "Dark", "Fairy"],
+        "resistant": ["Ghost", "Dark", "Psychic"],
+        "weak": ["Fighting", "Bug", "Fairy"]
+    },
+    {
+        "name": "Fairy",
+        "super": ["Fighting", "Dragon", "Dark"],
+        "not" : ["Poison", "Steel", "Fire"],
+        "resistant": ["Fighting", "Bug", "Dark", "Dragon"],
+        "weak": ["Poison", "Steel"]
+    }
+] %}
+
+{% set gymleaders = [
+    {"name": "Milo",
+        "specialty": "Grass",
+        "location": "Tuffield Gym",
+        "rewards": "Can catch Pokemon up to Lv. 25, Grass Uniform, TM10 Magical Leaf"
+    },
+    {"name": "Nessa",
+        "specialty": "Water",
+        "location": "Hulbury Gym",
+        "rewards": "Can catch Pokemon up to Lv. 30, Water Uniform, TM36 Whirlpool"
+    },
+    {"name": "Kabu",
+        "specialty": "Fire",
+        "location": "Motostoke Gym",
+        "rewards": "Can catch Pokemon up to Lv. 35, Fire Uniform, TM38 Will-O-Wisp"
+    },
+    {"name": "Bea",
+        "specialty": "Fighting",
+        "location": "Stow-on-Side Gym",
+        "rewards": "Can catch Pokemon up to Lv. 40, Fighting Uniform, TM42 Revenge"
+    },
+    {"name": "Opal",
+        "specialty": "Fairy",
+        "location": "Ballonlea Gym",
+        "rewards": "Can catch Pokemon up to Lv. 45, Fairy Uniform, TM87 Draining Kiss"
+    },
+    {"name": "Gordie",
+        "specialty": "Rock",
+        "location": "Circhester Gym",
+        "rewards": "Can catch Pokemon up to Lv. 50, Rock Uniform, TM48 Rock Tomb"
+    },
+    {"name": "Raihan",
+        "specialty": "Dragon",
+        "location": "Hammerlocke Gym",
+        "rewards": "Can catch Pokemon up to any level, Dragon Uniform, TM99 Breaking Swipe"
+    }
+] %}

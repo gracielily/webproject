@@ -1,0 +1,159 @@
+.galar {
+    background-image: url("../img/locations/galar-field.jpg");
+    background-position: 50% 10%;
+}
+
+.galar-intro {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.galar-intro h1 {
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.what-is-galar,
+.explore-galar {
+    margin-top: 60px;
+}
+.explore-galar h1 {
+    padding: 0 20px;
+}
+
+.explore-galar p {
+    padding: 20px;
+    margin-top: -20px;
+}
+
+#motostoke,
+.motostoke-stadium{
+    background: #576574;
+}
+
+
+#ballonlea {
+    background: #f368e0;
+}
+
+#wyndon {
+    background: #2e86de;
+}
+
+.location-overview .flex {
+    align-items: center;
+}
+
+.location-overview .flex div {
+    padding: 20px;
+    width: 50%;
+}
+
+.location-overview .top-heading {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.location-intro {
+    margin: 80px auto 30px auto;
+    text-align: center;
+}
+
+.location-intro p {
+    text-align: left;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.location-intro img {
+    margin-bottom: 40px;
+}
+
+.location-intro a {
+    color: #576574;
+}
+
+.motostoke-stadium,
+.glimwood-tangle {
+    margin-bottom: 40px;
+}
+
+/*.info-col,*/
+/*.image-col {*/
+/*    width: 50%;*/
+/*    display: inline-block;*/
+/*}*/
+
+/*.info-col {*/
+/*    float: left;*/
+/*}*/
+
+/*.image-col {*/
+/*    float: right;*/
+/*}*/
+
+/*.image-col img {*/
+/*    width: 100%;*/
+/*}*/
+
+.location-cards {
+    height: 300px;
+}
+
+.location-cards .card-image {
+    background: none;
+}
+
+.location-cards .card-info {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+#locations {
+    text-align: center;
+}
+
+#locations p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#locations .card-image img {
+    width: 100%;
+}
+
+.places-interest ul {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.places-interest h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.places-interest {
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.glimwood-tangle {
+    text-align: left;
+}
+
+.glimwood-tangle p {
+    margin: 0;
+    width: 95%;
+}
+
+.london img:first-child {
+    margin-bottom: -30px;
+    margin-top: 40px
+}
+
+.london {
+    margin-bottom: 60px;
+}
