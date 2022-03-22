@@ -1,0 +1,26 @@
+{
+  "name": "webproject",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "env NODE_ENV=production npx eleventy --pathprefix 'webproject'",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gracielily/webproject.git"
+  },
+  "keywords": [],
+  "author": "Grace Kelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gracielily/webproject/issues"
+  },
+  "homepage": "https://github.com/gracielily/webproject#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "moment": "^2.29.1"
+  }
+}
