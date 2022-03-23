@@ -81,26 +81,24 @@ eleventyNavigation:
                 border
                 between them. The weather across the entire Wild Area changes each day at midnight.</p>
         </div>
-        <div class="image-border margin-auto">
-            <div class="weather-imgs margin-auto flex">
-                <img class="image-border"
-                     src="{{ '/img/wild-area/sandstorm.jpg' | url }}" width="100%"
-                     alt="The Wild Area"/>
-                <img class="image-border"
-                     src="{{ '/img/wild-area/hail.jpg' | url }}" width="100%"
-                     alt="The Wild Area"/>
+        <section class="wild-area-gallery">
+            <div class="wrapper">
+                <div class="media">
+                  <img src="{{ '/img/wild-area/sandstorm.jpg' | url }}"
+                       alt="{{ "image of " + pokemon.name }}"/>
+                </div>
+                <div class="media">
+                  <img src="{{ '/img/wild-area/sunshine.jpg' | url }}"
+                       alt="{{ "image of " + pokemon.name }}"/>
+                </div>
+                <div class="media">
+                  <img src="{{ '/img/wild-area/hail.jpg' | url }}"
+                       alt="{{ "image of " + pokemon.name }}"/>
+                </div>
             </div>
-
-            <div class="weather-imgs margin-auto flex">
-                <img class="image-border"
-                     src="{{ '/img/wild-area/rain.jpg' | url }}" width="100%"
-                     alt="The Wild Area"/>
-                <img class="image-border"
-                     src="{{ '/img/wild-area/sunshine.jpg' | url }}" width="100%"
-                     alt="The Wild Area"/>
-
-            </div>
-        </div>
+        </section>
+    </div>
+</section>
 
     </section>
 
