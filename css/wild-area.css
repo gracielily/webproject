@@ -19,6 +19,11 @@
     width: 100%;
 }
 
+.wild-area-gallery {
+    padding: 20px;
+    margin-top: 40px;
+}
+
 .wild-area-content {
     width: 50%;
     padding: 20px;

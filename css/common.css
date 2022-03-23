@@ -404,3 +404,7 @@ tbody tr td {
 .top-heading-block {
     padding: 30px 0;
 }
+
+.media {
+    max-width: 30%;
+}
