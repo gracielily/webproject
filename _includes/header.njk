@@ -1,8 +1,14 @@
+{% set navPages = collections.all | eleventyNavigation %}
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Pokémon Sword & Shield</title>
+    {# Dynamic title based on the current page #}
+    {%- for navPage in navPages %}
+        {% if navPage.url == page.url %}
+            <title>{% if "poke" in page.url %}Pokedex{% elseif "galar" in page.url %}The Galar Region{% else %}{{ navPage.key }}{% endif %} | Pokémon Sword & Shield</title>
+        {% endif %}
+    {%- endfor %}
     <link rel="icon" type="image/x-icon" href="{{ '/img/favicon.png' | url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
