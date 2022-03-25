@@ -50,12 +50,12 @@
     <main class="pokedex">
         <section class="top-heading">
             <div class="top-heading-block container">
-                <ul id="heading-row">
-                    <li id="red-circle"></li>
-                    <li id="yellow-circle"></li>
-                    <li id="green-circle"></li>
+                <ul class="circles-row">
+                    <li class="red-circle"></li>
+                    <li class="yellow-circle"></li>
+                    <li class="green-circle"></li>
                 </ul>
-                <div id="blue-circle"></div>
+                <div class="blue-circle"></div>
                 <h1 class="align-center yellow-text full-width">Sobble Pokedex Entry</h1>
             </div>
         </section>
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="white-text">
-                        <div class="pokemon-heading">
+                        <div id="pokedex-entry-heading">
                             <h2 class="white-text">#816</h2>
                             <h1 class="yellow-text">Sobble</h1>
                             <p id="pokedex-entry-type"><span id="water"
@@ -88,8 +88,7 @@
 
                 </article>
 
-                <section class="pokedex-entry-stats align-center three-col-grid" id="water">
-
+                <section class="align-center pokedex-entry-stats three-col-grid" id="water">
                     <div>
                         <h2 class="white-text">Species</h2>
                         <p><strong>Lizard</strong></p>
@@ -109,9 +108,9 @@
                         
                     </div>
                 </section>
-                <section class="pokedex-entry-overview">
+                <section class="align-left" id="pokedex-entry-overview">
                     <h1>Overview</h1>
-                    <div class="overview-content three-col-grid">
+                    <div class="three-col-grid">
                         <p>Sobble is a small Pokémon that has light-blue skin with darker teal patches and a lighter blue belly and face.
         It has similar teal eyes with white pupils and sclerae. Sobble also has a yellow fin-like protrusion from the top
         of its head bordered in dark blue, as well as a curled blue tail tipped in the same dark blue. Sobble has thin limbs,
@@ -133,8 +132,8 @@
                     </div>
                 </section>
 
-                <section class="pokedex-gallery">
-                    <h1 class="align-center">Gallery</h1>
+                <section class="align-center" id="pokedex-gallery">
+                    <h1>Gallery</h1>
                     <div class="gallery-wrapper">
                         <div class="media">
                             <a href="../../img/pokemon/sobble-gallery1.jpg" target="_blank">
@@ -161,9 +160,9 @@
 
     </main>
 
-    <footer class="full-width">
+    <footer class="full-width align-center">
         <p><a class="link white-text" href="https://github.com/gracielily/webproject" target="_blank"><i class="fab fa-github"></i></a></p>
-        <p>Grace Kelly - 12722041</p>
+        <p class="white-text">Grace Kelly - 12722041</p>
     </footer>
 </body>
 </html>

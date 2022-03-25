@@ -53,13 +53,12 @@ iframe {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.intro {
-    width: 60%;
-    margin: 0 auto 30px auto;
-}
-
 .align-center {
     text-align: center;
+}
+
+.align-left {
+    text-align: left;
 }
 
 .white-text {
@@ -98,9 +97,7 @@ button {
 
 footer {
     background: #341f97;
-    color: #fff;
     width: 100%;
-    text-align: center;
     padding: 5px 0;
 }
 
@@ -112,7 +109,28 @@ footer .link {
     width: 100%;
 }
 
+.link {
+    text-decoration: none !important;
+}
+
+.link:hover {
+    color: #f2d335;
+}
+
+.active {
+    background: #f368e0;
+}
+
+.active .link:hover {
+    color: #fff;
+}
+
 /* CSS for Home Page */
+
+#home-intro {
+    width: 60%;
+    margin: 0 auto 30px auto;
+}
 
 #things-to-do {
     padding: 50px 0;
@@ -121,55 +139,52 @@ footer .link {
 
 #things-to-do .two-col-grid {
     width: 60%;
-    text-align: left;
 }
 
 /* CSS for Galar Pages */
 
-.galar-intro {
-    text-align: center;
+#galar-intro {
     margin-top: 80px;
 }
 
-.galar-intro h1 {
+#galar-intro h1 {
     font-size: 38px;
 }
 
-.what-is-galar,
-.explore-galar {
+#what-is-galar,
+#explore-galar {
     margin-top: 60px;
 }
 
-.explore-galar h1 {
+#explore-galar h1 {
     padding: 0 20px;
 }
 
-.explore-galar p {
+#explore-galar p {
     padding: 20px;
     margin-top: -20px;
 }
 
-#locations {
-    text-align: center;
-}
-
-#locations p {
-    color: #fff;
+#galar-locations p {
     font-size: 20px;
     margin-bottom: 40px;
 }
 
-#motostoke,
-.motostoke-stadium {
-    background: #576574;
+.motostoke {
+    background: #576574 !important;
 }
 
-#ballonlea {
-    background: #f368e0;
+.ballonlea {
+    background: #f368e0 !important;
 }
 
-#wyndon {
-    background: #2e86de;
+.wyndon {
+    background: #2e86de !important;
+}
+
+.location-overview .top-heading {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .location-overview .flex {
@@ -183,11 +198,9 @@ footer .link {
 
 .location-intro {
     margin: 80px auto 30px auto;
-    text-align: center;
 }
 
 .location-intro p {
-    text-align: left;
     margin: 0 auto;
     width: 70%;
 }
@@ -200,9 +213,13 @@ footer .link {
     color: #576574;
 }
 
-.motostoke-stadium,
-.glimwood-tangle {
+.location-extra-info {
     margin-bottom: 40px;
+}
+
+.location-extra-info p {
+    margin: 0;
+    width: 95%;
 }
 
 #kabu {
@@ -210,66 +227,31 @@ footer .link {
     transform: scaleX(-1);
 }
 
-#locations {
-    text-align: center;
-}
-
-#locations p {
-    color: #fff;
-    font-size: 20px;
-    margin-bottom: 40px;
-}
-
-.places-interest ul {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 20px;
-}
-
-.places-interest h1 {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.glimwood-tangle {
-    text-align: left;
-}
-
-.glimwood-tangle p {
-    margin: 0;
-    width: 95%;
-}
-
 #morgrem {
     transform: scaleX(-1);
 }
 
-.london img:first-child {
+#london img:first-child {
     margin-bottom: -30px;
     margin-top: 40px
 }
 
-.london {
+#london {
     margin-bottom: 60px;
 }
 
-.helpful-guide,
-.weather p,
-.things,
-.galar-intro h1 {
+#weather p,
+#things-to-do,
+#galar-intro h1,
+#gymleaders-table {
     margin-bottom: 50px;
 }
 
 /* CSS for Wild Area Page */
 
-.wild-area-intro .flex {
+#wild-area-intro .flex {
     justify-content: center;
     align-items: end;
-}
-
-.wild-area-gallery {
-    padding: 20px;
-    margin-top: 40px;
 }
 
 .wild-area-content {
@@ -277,97 +259,89 @@ footer .link {
     padding: 20px;
 }
 
-.weather {
+.wild-area-content p:last-child {
+    margin-bottom: 0;
+}
+
+#wild-area-gallery {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#weather {
     background: #54a0ff;
     padding: 30px;
     margin-top: 80px;
 }
 
-.weather p {
+#weather p {
     line-height: 1.5em;
 }
 
-.wild-area-content p:last-child {
-    margin-bottom: 0;
+#max-raid {
+    margin-top: 60px;
 }
 
-.max-raid-intro p:last-child {
+#max-raid-intro p:last-child {
     margin-bottom: 30px;
 }
 
-.max-raid-intro img {
+#max-raid-intro img {
     display: block;
     margin: 0 auto 40px auto;
 }
 
-.max-raid-imgs {
+#max-raid-imgs {
     margin-bottom: 80px;
-}
-
-.max-raid {
-    margin-top: 60px;
 }
 
 /* CSS for Pokedex Pages */
 
-.pokedex-entry-stats {
-    padding: 20px;
-    border-radius: 0 25px 25px 0;
-}
-
-.pokedex-entry-overview {
-    text-align: left;
-    background: #fff;
-    padding: 40px;
-    margin-top: 60px;
-}
-
-.pokedex-entry-overview h1 {
-    margin-top: 20px;
-}
-
-.overview-content {
-    column-gap: 40px;
-}
-
-.pokedex-gallery {
-    padding: 20px;
-    margin-top: 40px;
-}
-
-.pokedex-entry-stats {
-    column-gap: 40px;
-    padding: 20px;
-    margin-top: 40px;
-    margin-bottom: -60px;
-}
-
-.pokedex-entry-stats {
-    border-radius: 0 !important;
-}
-
-.pokedex-entry-stats img {
-    width: 200px;
-}
 
 .pokedex {
     background: #ff6b6b;
     width: 100%;
 }
 
-.pokedex .circles h1 {
-    text-align: center;
+.circles-row {
+    list-style: none;
+    width: 300px;
+    height: 30px;
+    margin-left: 110px;
 }
 
-.pokedex-intro {
+.circles-row li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+}
+
+.red-circle {
+    background: #ee5253;
+}
+
+.yellow-circle {
+    background: #feca57;
+}
+
+.green-circle {
+    background: #10ac84;
+}
+
+.blue-circle {
+    background: #48dbfb;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 4px solid #fff;
+    display: inline-block;
+}
+
+#pokedex-intro {
     padding-top: 40px;
     padding-bottom: 20px;
-}
-
-.pokedex-entries {
-    padding: 40px 0;
-    background: #222f3e;
-    border: 10px solid #f1f5f8;
 }
 
 .reference {
@@ -382,23 +356,37 @@ footer .link {
     margin-top: -20px;
 }
 
-.pokedex-intro {
-    margin: 0 auto;
-    text-align: center !important;
-}
-
-.pokedex-intro p {
+#pokedex-intro p {
     font-size: 18px;
     font-weight: 600;
     width: 45%;
     margin: -10px auto 20px auto;
 }
 
-.pokedex-intro p:nth-child(2) {
+#pokedex-intro p:nth-child(2) {
     color: #fff;
 }
 
-.pokemon-heading {
+#pokedex-entry-overview {
+    background: #fff;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+#pokedex-entry-overview h1 {
+    margin-top: 20px;
+}
+
+#pokedex-entry-overview .three-col-grid {
+    column-gap: 40px;
+}
+
+#pokedex-gallery {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#pokedex-entry-heading {
     margin: 30px auto 0 30px;
 }
 
@@ -406,39 +394,11 @@ footer .link {
     margin: 0 auto 30px auto;
 }
 
-#heading-row {
-    list-style: none;
-    width: 300px;
-    height: 30px;
-    margin-left: 110px;
-}
-
-#heading-row li {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    float: left;
-    margin-left: 20px;
-}
-
-#red-circle {
-    background: #ee5253;
-}
-
-#yellow-circle {
-    background: #feca57;
-}
-
-#green-circle {
-    background: #10ac84;
-}
-
-#blue-circle {
-    background: #48dbfb;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: 4px solid #fff;
-    display: inline-block;
+.pokedex-entry-stats {
+    column-gap: 40px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: -60px;
+    border-radius: 0 !important;
 }
 
