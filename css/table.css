@@ -1,0 +1,50 @@
+/* Styling for Tables */
+
+table {
+    table-layout: fixed;
+    border: none;
+    width: 100%;
+}
+
+thead th,
+tbody td {
+    width: 20%;
+}
+
+th, td {
+    padding: 20px;
+}
+
+table td img {
+    width: 50px;
+}
+
+/* Alternate the row colors */
+tbody tr:nth-child(odd) {
+    background-color: #c8d6e5;
+}
+
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+thead tr {
+    background: #00d2d3;
+    font-size: 18px;
+}
+
+thead tr,
+tbody tr td {
+    text-align: left;
+}
+
+#pokeballs thead tr {
+    background: #ee5253 !important;
+}
+
+#gymleaders-table img {
+    width: 150px;
+}
+#gymleaders thead tr {
+    background: #f368e0 !important;
+}

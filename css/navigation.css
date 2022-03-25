@@ -1,0 +1,33 @@
+/* CSS for the Navigation Bar */
+
+nav {
+    background: #5f27cd;
+    border-bottom: 6px solid #341f97;
+}
+
+nav ul {
+    list-style: none;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav ul li {
+    padding: 20px 40px;
+}
+
+.link {
+    text-decoration: none !important;
+}
+
+.link:hover {
+    color: #f2d335;
+}
+
+.active {
+    background: #f368e0;
+}
+
+.active .link:hover {
+    color: #fff;
+}

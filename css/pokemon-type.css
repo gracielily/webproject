@@ -1,0 +1,88 @@
+/* Styling for Pokemon Type Component */
+
+.type {
+    padding: 5px 20px;
+    width: 30px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+#fire {
+    background: #ee5253;
+}
+
+#fairy {
+    background: #ff9ff3;
+}
+
+#rock {
+    background: #A52A2AFF;
+}
+
+#normal {
+    background: #808080FF;
+}
+
+#flying {
+    background: skyblue;
+}
+
+#ghost {
+    background: rebeccapurple;
+}
+
+#poison {
+    background: #5f27cd;
+}
+
+#ground {
+    background: sandybrown;
+}
+
+#rock {
+    background: saddlebrown;
+}
+
+#fighting {
+    background: burlywood;
+}
+
+#bug {
+    background: yellowgreen;
+}
+
+#steel {
+    background: lightsteelblue;
+}
+
+#psychic {
+    background: hotpink;
+}
+
+#dark {
+    background: #000;
+}
+
+#grass {
+    background: #10ac84;
+}
+
+#electric {
+    background: #feca57;
+}
+
+#ice {
+    background: aliceblue;
+    color: #000;
+}
+
+#water {
+    background: #2e86de;
+}
+
+#dragon {
+    background: cornflowerblue;
+}

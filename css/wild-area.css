@@ -1,22 +1,8 @@
 /* CSS for Wild Area Page */
 
-.wild-area {
-    background-image: url("../img/wild-area/wild-area.png");
-}
-
 .wild-area-intro .flex {
     justify-content: center;
     align-items: end;
-}
-
-.wild-area .image-border {
-    width: 90%;
-    margin: 0 auto 30px auto;
-    border: 4px solid #2e86de;
-}
-
-.wild-area .weather {
-    width: 100%;
 }
 
 .wild-area-gallery {
@@ -30,6 +16,7 @@
 }
 
 .weather {
+    width: 100%;
     background: #54a0ff;
     padding: 30px;
     margin-top: 80px;
@@ -46,11 +33,6 @@
 
 .wild-area-content p:last-child {
     margin-bottom: 0;
-}
-
-.weather .image-border {
-    border: 4px solid #2e86de;
-    border-radius: 0;
 }
 
 .weather-imgs {
