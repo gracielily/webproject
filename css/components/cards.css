@@ -47,22 +47,28 @@
 }
 
 
-#locations .card-image img {
+#galar-locations .card-image img {
     width: 100%;
 }
 
-.location-cards {
+#location-cards {
     height: 90%;
 }
 
-.location-cards .card-image {
+#location-cards .card-image {
     background: none;
 }
 
-.location-cards .card-info {
+#location-cards .card-info {
     text-align: center;
     color: #fff;
     padding-bottom: 20px;
+}
+
+.pokedex-entries {
+    padding: 40px 0;
+    background: #222f3e;
+    border: 10px solid #f1f5f8;
 }
 
 .pokedex-entries .card-image img {

@@ -25,7 +25,7 @@ eleventyNavigation:
 
     <section class="align-center" id="middle">
         <br/>
-        <div class="container intro">
+        <div class="container" id="home-intro">
             <h1>Welcome to a brand new world of Pokémon!</h1>
             <p>Pokémon Sword & Shield is a game on Nintendo
                 Switch
@@ -42,7 +42,7 @@ eleventyNavigation:
 
             <article class="cards-container three-col-grid">
                 {% for starter in global_vars.starters %}
-                    <div id="{{ starter.name | lower }}" class="card starter-cards">
+                    <div class="card">
                         <a href="{{ 'pokedex/' + starter.name | lower | url }}">
                             <div class="card-image">
                                 <img src="{{ 'img/pokemon/' + starter.name  | lower + '.png' | url }}"
@@ -65,7 +65,7 @@ eleventyNavigation:
                      width="60%">
             </div>
             <h1 class="white-text">Things to do in Pokémon Sword & Shield</h1>
-            <div class="container two-col-grid margin-auto">
+            <div class="container two-col-grid margin-auto align-left">
                 <div>
                     <p>- Explore the newly discovered Galar Region</p>
                     <p>- See Idyllic Countryside and Contemporary Cities</p>

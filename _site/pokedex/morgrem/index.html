@@ -50,12 +50,12 @@
     <main class="pokedex">
         <section class="top-heading">
             <div class="top-heading-block container">
-                <ul id="heading-row">
-                    <li id="red-circle"></li>
-                    <li id="yellow-circle"></li>
-                    <li id="green-circle"></li>
+                <ul class="circles-row">
+                    <li class="red-circle"></li>
+                    <li class="yellow-circle"></li>
+                    <li class="green-circle"></li>
                 </ul>
-                <div id="blue-circle"></div>
+                <div class="blue-circle"></div>
                 <h1 class="align-center yellow-text full-width">Morgrem Pokedex Entry</h1>
             </div>
         </section>
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="white-text">
-                        <div class="pokemon-heading">
+                        <div id="pokedex-entry-heading">
                             <h2 class="white-text">#860</h2>
                             <h1 class="yellow-text">Morgrem</h1>
                             <p id="pokedex-entry-type"><span id="fairy"
@@ -88,8 +88,7 @@
 
                 </article>
 
-                <section class="pokedex-entry-stats align-center three-col-grid" id="fairy">
-
+                <section class="align-center pokedex-entry-stats three-col-grid" id="fairy">
                     <div>
                         <h2 class="white-text">Species</h2>
                         <p><strong>Fairy</strong></p>
@@ -115,9 +114,9 @@
                         
                     </div>
                 </section>
-                <section class="pokedex-entry-overview">
+                <section class="align-left" id="pokedex-entry-overview">
                     <h1>Overview</h1>
-                    <div class="overview-content three-col-grid">
+                    <div class="three-col-grid">
                         <p>Morgrem is a somewhat humanoid Pokémon with a magenta upper body and a light green lower body divided by a
         zig-zag line. It has large muscular arms with hands that have three very sharp fingers and round feet that each have three toes.
         Just like its pre-evolution, Morgrem has prominently large ears, large eyes with red pupils instead of the usual black, a long nose
@@ -133,8 +132,8 @@
                     </div>
                 </section>
 
-                <section class="pokedex-gallery">
-                    <h1 class="align-center">Gallery</h1>
+                <section class="align-center" id="pokedex-gallery">
+                    <h1>Gallery</h1>
                     <div class="gallery-wrapper">
                         <div class="media">
                             <a href="../../img/pokemon/morgrem-gallery1.jpg" target="_blank">
@@ -161,9 +160,9 @@
 
     </main>
 
-    <footer class="full-width">
+    <footer class="full-width align-center">
         <p><a class="link white-text" href="https://github.com/gracielily/webproject" target="_blank"><i class="fab fa-github"></i></a></p>
-        <p>Grace Kelly - 12722041</p>
+        <p class="white-text">Grace Kelly - 12722041</p>
     </footer>
 </body>
 </html>

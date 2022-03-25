@@ -15,17 +15,18 @@ eleventyNavigation:
     <main class="pokedex">
         <section class="top-heading">
             <div class="top-heading-block container">
-                <ul id="heading-row">
-                    <li id="red-circle"></li>
-                    <li id="yellow-circle"></li>
-                    <li id="green-circle"></li>
+                <ul class="circles-row">
+                    <li class="red-circle"></li>
+                    <li class="yellow-circle"></li>
+                    <li class="green-circle"></li>
                 </ul>
-                <div id="blue-circle"></div>
+                <div class="blue-circle"></div>
                 <h1 class="yellow-text align-center full-width">Sword & Shield Pokédex</h1>
             </div>
         </section>
+
         <section class="container">
-            <section class="pokedex-intro">
+            <section class="align-center" id="pokedex-intro">
                 <p>Here you'll find a selection of Pokémon that are exclusive to Pokémon Sword & Shield.</p>
                 <h2 class="white-text">Click on an entry below to learn more!</h2>
             </section>
@@ -33,7 +34,6 @@ eleventyNavigation:
             <section class="pokedex-entries">
                 <article class="cards-container container three-col-grid">
                     {% for pokemon in global_vars.pokedexEntries %}
-
                         <a href="{{ '../pokedex/' + pokemon.name | lower | url }}">
                             <div class="card">
                                 <div class="card-image">

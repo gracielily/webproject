@@ -20,13 +20,13 @@ eleventyNavigation:
             </div>
         </section>
 
-        <section class="galar-region container">
-            <section class="galar-intro">
+        <section class="container" id="galar-region">
+            <section class="align-center" id="galar-intro">
                 <h1>Welcome to Galar</h1>
-                <img class="image-border" src="{{ '/img/locations/galar-region.jpg' | url }}" alt="The Galar Region"/>
+                <img src="{{ '/img/locations/galar-region.jpg' | url }}" alt="The Galar Region"/>
             </section>
 
-            <section class="what-is-galar">
+            <section id="what-is-galar">
                 <h2>What is the Galar Region?</h2>
                 <p>The Galar Region is the setting for the games. When creating the game, the creators
                     based the region on real world locations across the United Kingdom.
@@ -34,7 +34,7 @@ eleventyNavigation:
                     explore. </p>
             </section>
 
-            <section class="flex explore-galar">
+            <section class="flex" id="explore-galar">
                 <div>
                     <img src="{{ '/img/locations/cities.gif' | url }}" alt="different cities of Galar">
                 </div>
@@ -48,14 +48,14 @@ eleventyNavigation:
             </section>
 
             <section>
-                <div class="card-entries" id="locations">
+                <div class="card-entries align-center white-text" id="galar-locations">
                     <h1>Explore The Galar Region</h1>
                     <h2 class="white-text">Learn more about the most popular areas in Galar by clicking on the below!</h2>
 
                     <article class="cards-container container three-col-grid">
                         {% for location in global_vars.locations %}
                             <a href="{{ '../galar-region/' + location | lower | url }}">
-                                <div id="{{ location | lower }}" class="card location-cards">
+                                <div id="location-cards" class="card {{ location | lower }}">
                                     <div class="card-image">
                                         <img src="{{ '../img/locations/' + location  | lower + '.png' | url }}"
                                              alt="{{ 'image of ' + location }}"

@@ -15,19 +15,3 @@ nav ul {
 nav ul li {
     padding: 20px 40px;
 }
-
-.link {
-    text-decoration: none !important;
-}
-
-.link:hover {
-    color: #f2d335;
-}
-
-.active {
-    background: #f368e0;
-}
-
-.active .link:hover {
-    color: #fff;
-}

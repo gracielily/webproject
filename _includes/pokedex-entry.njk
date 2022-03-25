@@ -9,12 +9,12 @@
     <main class="pokedex">
         <section class="top-heading">
             <div class="top-heading-block container">
-                <ul id="heading-row">
-                    <li id="red-circle"></li>
-                    <li id="yellow-circle"></li>
-                    <li id="green-circle"></li>
+                <ul class="circles-row">
+                    <li class="red-circle"></li>
+                    <li class="yellow-circle"></li>
+                    <li class="green-circle"></li>
                 </ul>
-                <div id="blue-circle"></div>
+                <div class="blue-circle"></div>
                 <h1 class="align-center yellow-text full-width">{{ pokemon.name }} Pokedex Entry</h1>
             </div>
         </section>
@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="white-text">
-                        <div class="pokemon-heading">
+                        <div id="pokedex-entry-heading">
                             <h2 class="white-text">#{{ pokemon.id }}</h2>
                             <h1 class="yellow-text">{{ pokemon.name }}</h1>
                             <p id="pokedex-entry-type"><span id="{{ pokemon.type | lower }}"
@@ -46,8 +46,7 @@
 
                 </article>
 
-                <section class="pokedex-entry-stats align-center three-col-grid" id="{{ pokemon.type | lower }}">
-
+                <section class="align-center pokedex-entry-stats three-col-grid" id="{{ pokemon.type | lower }}">
                     <div>
                         <h2 class="white-text">Species</h2>
                         <p><strong>{{ pokemon.species }}</strong></p>
@@ -65,9 +64,9 @@
                         {% endfor %}
                     </div>
                 </section>
-                <section class="pokedex-entry-overview">
+                <section class="align-left" id="pokedex-entry-overview">
                     <h1>Overview</h1>
-                    <div class="overview-content three-col-grid">
+                    <div class="three-col-grid">
                         <p>{{ pokemon.overview[0] }}</p>
                         <p>{{ pokemon.overview[1] }}</p>
                         <div>
@@ -77,8 +76,8 @@
                     </div>
                 </section>
 
-                <section class="pokedex-gallery">
-                    <h1 class="align-center">Gallery</h1>
+                <section class="align-center" id="pokedex-gallery">
+                    <h1>Gallery</h1>
                     <div class="gallery-wrapper">
                         <div class="media">
                             <a href="{{ '../../img/pokemon/' + pokemon.name | lower + '-gallery1.jpg' | url }}" target="_blank">
