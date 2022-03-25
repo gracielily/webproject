@@ -31,19 +31,19 @@
 /* Set Image Backgrounds for Different Pages */
 
 #home {
-    background-image: url("../img/background.png");
+    background-image: url("../../img/background.png");
 }
 
 #guide {
-    background-image: url("../img/guide-background.jpg");
+    background-image: url("../../img/guide-background.jpg");
     background-position: 50% 12%;
 }
 
 #galar {
-    background-image: url("../img/locations/galar-field.jpg");
+    background-image: url("../../img/locations/galar-field.jpg");
     background-position: 50% 10%;
 }
 
 #wild-area {
-    background-image: url("../img/wild-area/wild-area.png");
+    background-image: url("../../img/wild-area/wild-area.png");
 }
