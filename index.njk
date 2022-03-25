@@ -5,88 +5,88 @@ eleventyNavigation:
   order: 1
 ---
 {% import '_globals.njk' as global_vars %}
-<link rel="stylesheet" href="{{ '/css/components/hero.css' | url }}">
-<link rel="stylesheet" href="{{ '/css/components/cards.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/hero.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/cards.css' | url }}">
 </head>
 
 <body>
-<section class="hero-image" id="home">
-    <div class="hero-text-container">
-        <div class="hero-text">
-            <h1 class="yellow-text">Become a Legend</h1>
-            <h2 class="white-text">Pokémon Sword & Shield on Nintendo Switch</h2>
-            <a href="#middle">
-                <button class="white-text"><strong>Learn More</strong></button>
-            </a>
+{% include "navigation.njk" %}
+    <section class="hero-image" id="home">
+        <div class="hero-text-container">
+            <div class="hero-text">
+                <h1 class="yellow-text">Become a Legend</h1>
+                <h2 class="white-text">Pokémon Sword & Shield on Nintendo Switch</h2>
+                <a href="#middle">
+                    <button class="white-text"><strong>Learn More</strong></button>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="align-center" id="middle">
-    <br/>
-    <div class="container intro">
-        <h1>Welcome to a brand new world of Pokémon!</h1>
-        <p>Pokémon Sword & Shield is a game on Nintendo
-            Switch
-            that introduces the region of Galar, an expansive land
-            of dynamic cities, rolling countryside, forest and mountains.
-            Players can visit Gyms throughout Galar as they train to be the Champion.</p>
+    <section class="align-center" id="middle">
         <br/>
-    </div>
+        <div class="container intro">
+            <h1>Welcome to a brand new world of Pokémon!</h1>
+            <p>Pokémon Sword & Shield is a game on Nintendo
+                Switch
+                that introduces the region of Galar, an expansive land
+                of dynamic cities, rolling countryside, forest and mountains.
+                Players can visit Gyms throughout Galar as they train to be the Champion.</p>
+            <br/>
+        </div>
 
-    <img src="{{ '/img/starters.gif' | url }}" alt="The Three Starters of Pokémon Sword and Shield" width="50%">
-    <div class="container">
-        <h1 class="blue-text">Choose Your Partner</h1>
-        <h2>Here are the starter Pokémon in Sword & Shield</h2>
+        <img src="{{ '/img/starters.gif' | url }}" alt="The Three Starters of Pokémon Sword and Shield" width="50%">
+        <div class="container">
+            <h1 class="blue-text">Choose Your Partner</h1>
+            <h2>Here are the starter Pokémon in Sword & Shield</h2>
 
-        <article class="cards-container three-col-grid">
-            {% for starter in global_vars.starters %}
-                <div id="{{ starter.name | lower }}" class="card starter-cards">
-                    <a href="{{ 'pokedex/' + starter.name | lower | url }}">
-                        <div class="card-image">
-                            <img src="{{ 'img/pokemon/' + starter.name  | lower + '.png' | url }}"
-                                 alt="{{ 'image of ' + starter.name }}"/>
-                        </div>
-                        <div class="card-info">
-                            <h2>{{ starter.name }}</h2>
-                            <p>{{ starter.tagline }}</p>
-                        </div>
-                    </a>
+            <article class="cards-container three-col-grid">
+                {% for starter in global_vars.starters %}
+                    <div id="{{ starter.name | lower }}" class="card starter-cards">
+                        <a href="{{ 'pokedex/' + starter.name | lower | url }}">
+                            <div class="card-image">
+                                <img src="{{ 'img/pokemon/' + starter.name  | lower + '.png' | url }}"
+                                     alt="{{ 'image of ' + starter.name }}"/>
+                            </div>
+                            <div class="card-info">
+                                <h2>{{ starter.name }}</h2>
+                                <p>{{ starter.tagline }}</p>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </article>
+        </div>
+
+        <section class="yellow-background" id="things-to-do">
+            <div>
+                <img src="{{ '/img/pokemon-sword-and-shield.png' | url }}"
+                     alt="The Three Starters of Pokémon Sword and Shield"
+                     width="60%">
+            </div>
+            <h1 class="white-text">Things to do in Pokémon Sword & Shield</h1>
+            <div class="container two-col-grid margin-auto">
+                <div>
+                    <p>- Explore the newly discovered Galar Region</p>
+                    <p>- See Idyllic Countryside and Contemporary Cities</p>
+                    <p>- Visit Gyms in your quest to become Champion</p>
                 </div>
-            {% endfor %}
-        </article>
-
-    </div>
-
-    <section class="yellow-background" id="things-to-do">
-        <div>
-            <img src="{{ '/img/pokemon-sword-and-shield.png' | url }}"
-                 alt="The Three Starters of Pokémon Sword and Shield"
-                 width="60%">
-        </div>
-        <h1 class="white-text">Things to do in Pokémon Sword & Shield</h1>
-        <div class="container two-col-grid margin-auto">
-            <div>
-                <p>- Explore the newly discovered Galar Region</p>
-                <p>- See Idyllic Countryside and Contemporary Cities</p>
-                <p>- Visit Gyms in your quest to become Champion</p>
+                <div>
+                    <p>- Search for never-before-seen Pokémon in the Wild Area</p>
+                    <p>- Take on wild Dynamax Pokémon in Max Raid Battles</p>
+                    <p>- See Pokémon take on gigantic appearances in battle</p>
+                </div>
             </div>
-            <div>
-                <p>- Search for never-before-seen Pokémon in the Wild Area</p>
-                <p>- Take on wild Dynamax Pokémon in Max Raid Battles</p>
-                <p>- See Pokémon take on gigantic appearances in battle</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container">
-        <h1>Watch the trailer</h1>
-        <iframe width="100%" height="636"
-                src="https://www.youtube.com/embed/uBYORdr_TY8"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </section>
+        <section class="container">
+            <h1>Watch the trailer</h1>
+            <iframe width="100%" height="636"
+                    src="https://www.youtube.com/embed/uBYORdr_TY8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </section>
 
-</section>
+    </section>
 

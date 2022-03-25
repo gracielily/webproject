@@ -5,138 +5,135 @@ eleventyNavigation:
   order: 5
 ---
 {% import '_globals.njk' as global_vars %}
-<link rel="stylesheet" href="{{ '/css/components/table.css' | url }}">
-<link rel="stylesheet" href="{{ '/css/components/hero.css' | url }}">
-<link rel="stylesheet" href="{{ '/css/components/mini-menu.css' | url }}">
-<link rel="stylesheet" href="{{ '/css/components/pokemon-type.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/table.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/hero.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/mini-menu.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/pokemon-type.css' | url }}">
 </head>
 
 <body>
-    <section class="hero-image" id="guide">
-        <div class="hero-text-container">
-            <div class="hero-text">
-                <h1 class="yellow-text">Sword & Shield Guide</h1>
-                <h2 class="white-text">Useful information to help you on your quest to become Pokémon Champion</h2>
+{% include "navigation.njk" %}
+    <main>
+        <section class="hero-image" id="guide">
+            <div class="hero-text-container">
+                <div class="hero-text">
+                    <h1 class="yellow-text">Sword & Shield Guide</h1>
+                    <h2 class="white-text">Useful information to help you on your quest to become Pokémon Champion</h2>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container helpful-guide flex">
-        {# add mini menu that directs to a section in the page #}
-        <aside class="mini-menu">
-            <ul>
-                <a href="#pokeballs" class="link white-text">
-                    <li>Pokeballs</li>
-                </a>
-                <a href="#moves" class="link white-text">
-                    <li>Move Types</li>
-                </a>
-                <a href="#gymleaders" class="link white-text">
-                    <li>Gym Leaders</li>
-                </a>
-            </ul>
-        </aside>
+        <section class="container helpful-guide flex">
+            {# add mini menu that directs to a section in the page #}
+            <aside class="mini-menu">
+                <ul>
+                    <li><a href="#pokeballs" class="link white-text">Pokeballs</a></li>
+                    <li><a href="#moves" class="link white-text">Move Types</a></li>
+                    <li><a href="#gymleaders" class="link white-text">Gym Leaders</a></li>
+                </ul>
+            </aside>
 
-        <section>
-            <div>
+            <section>
+                <div>
+                    <br/>
+                    <h1>Helpful Guide</h1>
+                    <p>Here you will find some tips to help you on your playthrough. You can find out about the different
+                        pokeballs, move types
+                        and gym leaders that you will find int the game.</p>
+                </div>
                 <br/>
-                <h1>Helpful Guide</h1>
-                <p>Here you will find some tips to help you on your playthrough. You can find out about the different
-                    pokeballs, move types
-                    and gym leaders that you will find int the game.</p>
-            </div>
-            <br/>
-            <h2 id="pokeballs">Pokeballs Guide</h2>
-            <p>Here you can find a list of pokeballs found in Sword & Shield, what they do and where to find them</p>
-            <table>
-                <thead>
-                <tr class="white-text">
-                    <th></th>
-                    <th>Name</th>
-                    <th>Description</th>
-                    <th>How to get</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for pokeball in global_vars.pokeballs %}
-                    <tr>
-                        <td class="align-center"><img
-                                    src="{{ '../img/pokeballs/' + pokeball.name | replace(" ", "") | lower + '.png' | url }}"
-                                    alt="{{ pokeball.name }}"></td>
-                        <td>{{ pokeball.name }}</td>
-                        <td>{{ pokeball.effect }}</td>
-                        <td>{{ pokeball.how }}</td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-            </table>
-
-            <h2 id="moves">Move Type Guide</h2>
-            <p>Here you can find a list of move types and how they compare to others in the game</p>
-            <table>
-                <thead>
+                <h2 id="pokeballs">Pokeballs Guide</h2>
+                <p>Here you can find a list of pokeballs found in Sword & Shield, what they do and where to find them</p>
+                <table>
+                    <thead>
                     <tr class="white-text">
                         <th></th>
-                        <th>Strong against</th>
-                        <th>Weak against</th>
-                        <th>Resistant to</th>
-                        <th>Weak to</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>How to get</th>
                     </tr>
-                </thead>
-                <tbody>
-                {% for moveType in global_vars.moveTypes %}
-                    <tr>
-                        <td><span id="{{ moveType.name | lower }}" class="type">{{ moveType.name }}</span></td>
-                        <td>
-                            {% for s in moveType.super %}
-                                <p><span id="{{ s | lower }}" class="type">{{ s }}</span></p>
-                            {% endfor %}
-                        </td>
-                        <td>
-                            {% for n in moveType.not %}
-                                <p><span id="{{ n | lower }}" class="type">{{ n }}</span></p>
-                            {% endfor %}
-                        </td>
-                        <td>
-                            {% for r in moveType.resistant %}
-                                <p><span id="{{ r | lower }}" class="type">{{ r }}</span></p>
-                            {% endfor %}
-                        </td>
-                        <td>
-                            {% for w in moveType.weak %}
-                                <p><span id="{{ w | lower }}" class="type">{{ w }}</span></p>
-                            {% endfor %}
-                        </td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    {% for pokeball in global_vars.pokeballs %}
+                        <tr>
+                            <td class="align-center"><img
+                                        src="{{ '../img/pokeballs/' + pokeball.name | replace(" ", "") | lower + '.png' | url }}"
+                                        alt="{{ pokeball.name }}"></td>
+                            <td>{{ pokeball.name }}</td>
+                            <td>{{ pokeball.effect }}</td>
+                            <td>{{ pokeball.how }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
 
-            <h2 id="gymleaders">Gym Leader Guide</h2>
-            <p>Here you can find a list of the gym leaders in Sword & Shield</p>
-            <table id="gymleaders-table">
-                <thead>
-                <tr class="white-text">
-                    <th></th>
-                    <th>Name</th>
-                    <th>Specialty</th>
-                    <th>Location</th>
-                    <th>Rewards</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for gymleader in global_vars.gymleaders %}
-                    <tr>
-                        <td><img src="{{ '../img/gymleaders/' + gymleader.name | lower + '.png' | url }}"
-                                 alt="{{ gymleader.name }}"></td>
-                        <td>{{ gymleader.name }}</td>
-                        <td><p><span id="{{ gymleader.specialty | lower }}"
-                                     class="type">{{ gymleader.specialty }}</span></p></td>
-                        <td>{{ gymleader.location }}</td>
-                        <td>{{ gymleader.rewards }}</td>
+                <h2 id="moves">Move Type Guide</h2>
+                <p>Here you can find a list of move types and how they compare to others in the game</p>
+                <table>
+                    <thead>
+                        <tr class="white-text">
+                            <th></th>
+                            <th>Strong against</th>
+                            <th>Weak against</th>
+                            <th>Resistant to</th>
+                            <th>Weak to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for moveType in global_vars.moveTypes %}
+                        <tr>
+                            <td><span id="{{ moveType.name | lower }}" class="type">{{ moveType.name }}</span></td>
+                            <td>
+                                {% for s in moveType.super %}
+                                    <p><span id="{{ s | lower }}" class="type">{{ s }}</span></p>
+                                {% endfor %}
+                            </td>
+                            <td>
+                                {% for n in moveType.not %}
+                                    <p><span id="{{ n | lower }}" class="type">{{ n }}</span></p>
+                                {% endfor %}
+                            </td>
+                            <td>
+                                {% for r in moveType.resistant %}
+                                    <p><span id="{{ r | lower }}" class="type">{{ r }}</span></p>
+                                {% endfor %}
+                            </td>
+                            <td>
+                                {% for w in moveType.weak %}
+                                    <p><span id="{{ w | lower }}" class="type">{{ w }}</span></p>
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+                <h2 id="gymleaders">Gym Leader Guide</h2>
+                <p>Here you can find a list of the gym leaders in Sword & Shield</p>
+                <table id="gymleaders-table">
+                    <thead>
+                    <tr class="white-text">
+                        <th></th>
+                        <th>Name</th>
+                        <th>Specialty</th>
+                        <th>Location</th>
+                        <th>Rewards</th>
                     </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    {% for gymleader in global_vars.gymleaders %}
+                        <tr>
+                            <td><img src="{{ '../img/gymleaders/' + gymleader.name | lower + '.png' | url }}"
+                                     alt="{{ gymleader.name }}"></td>
+                            <td>{{ gymleader.name }}</td>
+                            <td><p><span id="{{ gymleader.specialty | lower }}"
+                                         class="type">{{ gymleader.specialty }}</span></p></td>
+                            <td>{{ gymleader.location }}</td>
+                            <td>{{ gymleader.rewards }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </section>
         </section>
-    </section>
+    </main>

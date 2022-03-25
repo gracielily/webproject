@@ -2,7 +2,10 @@
     <nav>
         <ul class="flex margin-auto">
             {%- for navPage in navPages %}
-                    <li {% if navPage.url == page.url %} class="active"{% endif %}>
+                    {# Add highlighting to link of current page and to parent page link #}
+                    <li {% if navPage.url == page.url
+                            or ("pokedex" in page.url and "pokedex" in navPage.url)
+                            or ("galar" in page.url and "galar" in navPage.url)%} class="active"{% endif %}>
                         <a class="link white-text" href="{{ navPage.url | url }}">{{ navPage.title }}</a>
                     </li>
             {%- endfor %}

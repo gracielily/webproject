@@ -350,12 +350,12 @@ footer .link {
     width: 200px;
 }
 
-#pokedex {
+.pokedex {
     background: #ff6b6b;
     width: 100%;
 }
 
-#pokedex .circles h1 {
+.pokedex .circles h1 {
     text-align: center;
 }
 
@@ -375,7 +375,7 @@ footer .link {
     margin-bottom: -10px;
 }
 
-#pokedex h1 {
+.pokedex h1 {
     font-size: 38px;
     display: inline-block;
     margin-bottom: 20px;

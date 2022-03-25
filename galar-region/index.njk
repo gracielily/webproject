@@ -5,72 +5,71 @@ eleventyNavigation:
     order: 2
 ---
 {% import '_globals.njk' as global_vars %}
-<link rel="stylesheet" href="{{ '/css/components/hero.css' | url }}">
-<link rel="stylesheet" href="{{ '/css/components/cards.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/hero.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/cards.css' | url }}">
 </head>
 <body>
+{% include "navigation.njk" %}
+    <main>
+        <section class="hero-image" id="galar">
+            <div class="hero-text-container">
+                <div class="hero-text">
+                    <h1 class="yellow-text">The Galar Region</h1>
+                    <h2 class="white-text">A region full of unique locations</h2>
+                </div>
+            </div>
+        </section>
 
-<div class="hero-image" id="galar">
-    <div class="hero-text-container">
-        <div class="hero-text">
-            <h1 class="yellow-text">The Galar Region</h1>
-            <h2 class="white-text">A region full of unique locations</h2>
-        </div>
-    </div>
-</div>
+        <section class="galar-region container">
+            <section class="galar-intro">
+                <h1>Welcome to Galar</h1>
+                <img class="image-border" src="{{ '/img/locations/galar-region.jpg' | url }}" alt="The Galar Region"/>
+            </section>
 
-<section class="galar-region container">
-    <section class="galar-intro">
-        <h1>Welcome to Galar</h1>
-        <img class="image-border" src="{{ '/img/locations/galar-region.jpg' | url }}" alt="The Galar Region"/>
-    </section>
+            <section class="what-is-galar">
+                <h2>What is the Galar Region?</h2>
+                <p>The Galar Region is the setting for the games. When creating the game, the creators
+                    based the region on real world locations across the United Kingdom.
+                    The game draws cues from the locations, culture, and history of the UK to create a land full of places to
+                    explore. </p>
+            </section>
 
-    <section class="what-is-galar">
-        <h2>What is the Galar Region?</h2>
-        <p>The Galar Region is the setting for the games. When creating the game, the creators
-            based the region on real world locations across the United Kingdom.
-            The game draws cues from the locations, culture, and history of the UK to create a land full of places to
-            explore. </p>
-    </section>
+            <section class="flex explore-galar">
+                <div>
+                    <img src="{{ '/img/locations/cities.gif' | url }}" alt="different cities of Galar">
+                </div>
+                <div>
+                    <h1>Lots to Explore</h1>
+                    <p>During your adventure, you will be traveling through the Galar region, where you will find many unique
+                        locations, such as huge grassy plains filled with nature and towns and cities where people and Pokémon
+                        work and live
+                        together!</p>
+                </div>
+            </section>
 
-    <section class="flex explore-galar">
-        <div>
-            <img src="{{ '/img/locations/cities.gif' | url }}" alt="different cities of Galar">
-        </div>
-        <div>
-            <h1>Lots to Explore</h1>
-            <p>During your adventure, you will be traveling through the Galar region, where you will find many unique
-                locations, such as huge grassy plains filled with nature and towns and cities where people and Pokémon
-                work and live
-                together!</p>
-        </div>
-    </section>
-    <section>
-        <div class="card-entries" id="locations">
-            <h1>Explore The Galar Region</h1>
-            <h2 class="white-text">Learn more about the most popular areas in Galar by clicking on the below!</h2>
+            <section>
+                <div class="card-entries" id="locations">
+                    <h1>Explore The Galar Region</h1>
+                    <h2 class="white-text">Learn more about the most popular areas in Galar by clicking on the below!</h2>
 
-            <article class="cards-container container three-col-grid">
-                {% for location in global_vars.locations %}
-                    <a href="{{ '../galar-region/' + location | lower | url }}">
-                        <div id="{{ location | lower }}" class="card location-cards">
-                            <div class="card-image">
-                                <img src="{{ '../img/locations/' + location  | lower + '.png' | url }}"
-                                     alt="{{ 'image of ' + location }}"
-                                    class="full-width"/>
-                            </div>
-                            <div class="card-info">
-                                <h2>{{ location }}</h2>
-                            </div>
-                        </div>
-                    </a>
-                {% endfor %}
-            </article>
+                    <article class="cards-container container three-col-grid">
+                        {% for location in global_vars.locations %}
+                            <a href="{{ '../galar-region/' + location | lower | url }}">
+                                <div id="{{ location | lower }}" class="card location-cards">
+                                    <div class="card-image">
+                                        <img src="{{ '../img/locations/' + location  | lower + '.png' | url }}"
+                                             alt="{{ 'image of ' + location }}"
+                                            class="full-width"/>
+                                    </div>
+                                    <div class="card-info">
+                                        <h2>{{ location }}</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </article>
 
-        </div>
-    </section>
-</section>
-
-<script>
-
-</script>
+                </div>
+            </section>
+        </section>
+    </main>

@@ -1,10 +1,11 @@
 ---
 layout: layout.njk
 ---
-<link rel="stylesheet" href="{{ '/css/components/heading.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/heading.css' | url }}">
 </head>
 
 <body>
+{% include "navigation.njk" %}
     <main class="location-overview">
         <section class="top-heading" id="wyndon">
             <div class="top-heading-block container">
@@ -67,4 +68,3 @@ layout: layout.njk
             </section>
         </section>
     </main>
-

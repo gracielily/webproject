@@ -5,13 +5,14 @@ eleventyNavigation:
     order: 4
 ---
 {% import '_globals.njk' as global_vars %}
-<link rel="stylesheet" href="{{ '/css/components/heading.css' | url }}">
-<link rel="stylesheet" href="{{ '/css/components/cards.css' | url }}">
-<link rel="stylesheet" href="{{ '/css/components/pokemon-type.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/heading.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/cards.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/components/pokemon-type.css' | url }}">
 </head>
 
 <body>
-    <main id="pokedex">
+{% include "navigation.njk" %}
+    <main class="pokedex">
         <section class="top-heading">
             <div class="top-heading-block container">
                 <ul id="heading-row">
@@ -23,7 +24,7 @@ eleventyNavigation:
                 <h1 class="yellow-text align-center full-width">Sword & Shield Pokédex</h1>
             </div>
         </section>
-        <div class="container">
+        <section class="container">
             <section class="pokedex-intro">
                 <p>Here you'll find a selection of Pokémon that are exclusive to Pokémon Sword & Shield.</p>
                 <h2 class="white-text">Click on an entry below to learn more!</h2>
@@ -49,5 +50,5 @@ eleventyNavigation:
                     {% endfor %}
                 </article>
             </section>
-        </div>
+        </section>
     </main>
