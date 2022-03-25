@@ -38,13 +38,6 @@ tbody tr td {
     text-align: left;
 }
 
-#pokeballs thead tr {
-    background: #ee5253 !important;
-}
-
 #gymleaders-table img {
     width: 150px;
-}
-#gymleaders thead tr {
-    background: #f368e0 !important;
 }
