@@ -1,0 +1,22 @@
+/* CSS for Mini Menu */
+
+.mini-menu {
+    /* make the menu follow along user scrolling */
+    position: sticky;
+    top: 0;
+    height: 180px;
+    margin-top: 350px;
+    padding: 40px;
+    background: #5f27cd;
+    margin-right: 30px;
+}
+
+.mini-menu ul {
+    padding: 0;
+}
+
+.mini-menu li {
+    padding: 10px 20px 10px 0;
+    font-size: 18px;
+    display: block;
+}

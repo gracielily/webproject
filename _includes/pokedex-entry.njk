@@ -1,4 +1,7 @@
-<link rel="stylesheet" href="{{ '../../css/pokedex.css' | url }}">
+<link rel="stylesheet" href="{{ '/css/heading.css' | url }}">
+<link rel="stylesheet" href="{{ '../../css/gallery.css' | url }}">
+<link rel="stylesheet" href="{{ '../../css/cards.css' | url }}">
+<link rel="stylesheet" href="{{ '/css/pokemon-type.css' | url }}">
 </head>
 
 <body>
@@ -11,15 +14,15 @@
                     <li id="green-circle"></li>
                 </ul>
                 <div id="blue-circle"></div>
-                <h1 class="align-center">{{ pokemon.name }} Pokedex Entry</h1>
+                <h1 class="align-center yellow-text full-width">{{ pokemon.name }} Pokedex Entry</h1>
             </div>
         </section>
         <br/>
 
         <section class="container">
-            <p><a class="breadcrumb white-text" href="../"><i class="fa fa-arrow-left"></i> Back to Pokedex</a></p>
+            <p><a class="link white-text" href="../"><i class="fa fa-arrow-left"></i> Back to Pokedex</a></p>
             <div class="pokedex-entries" id="single-entry">
-                <article class="cards-container container">
+                <article class="cards-container container two-col-grid">
 
                     <div class="card">
                         <div class="card-image">
@@ -29,9 +32,9 @@
                     </div>
 
                     <div class="white-text">
-                        <div class="heading">
+                        <div class="pokemon-heading">
                             <h2 class="white-text">#{{ pokemon.id }}</h2>
-                            <h1>{{ pokemon.name }}</h1>
+                            <h1 class="yellow-text">{{ pokemon.name }}</h1>
                             <p id="pokedex-entry-type"><span id="{{ pokemon.type | lower }}"
                                      class="type">{{ pokemon.type }}</span></p>
                             <p>{{ pokemon.description }}</p>
@@ -42,7 +45,7 @@
 
                 </article>
 
-                <section class="pokedex-entry-stats align-center" id="{{ pokemon.type | lower }}">
+                <section class="pokedex-entry-stats align-center three-col-grid" id="{{ pokemon.type | lower }}">
 
                     <div>
                         <h2 class="white-text">Species</h2>
@@ -63,7 +66,7 @@
                 </section>
                 <section class="pokedex-entry-overview">
                     <h1>Overview</h1>
-                    <div class="overview-content">
+                    <div class="overview-content three-col-grid">
                         <p>{{ pokemon.overview[0] }}</p>
                         <p>{{ pokemon.overview[1] }}</p>
                         <div>
@@ -75,7 +78,7 @@
 
                 <section class="pokedex-gallery">
                     <h1 class="align-center">Gallery</h1>
-                    <div class="wrapper">
+                    <div class="gallery-wrapper">
                         <div class="media">
                             <a href="{{ '../../img/pokemon/' + pokemon.name | lower + '-gallery1.jpg' | url }}" target="_blank">
                                 <img src="{{ '../../img/pokemon/' + pokemon.name | lower + '-gallery1.jpg' | url }}"

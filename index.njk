@@ -5,13 +5,18 @@ eleventyNavigation:
   order: 1
 ---
 {% import '_globals.njk' as global_vars %}
-<section class="hero-image">
+<link rel="stylesheet" href="{{ '/css/hero.css' | url }}">
+<link rel="stylesheet" href="{{ '/css/cards.css' | url }}">
+</head>
+
+<body>
+<section class="hero-image" id="home">
     <div class="hero-text-container">
         <div class="hero-text">
-            <h1>Become a Legend</h1>
-            <h2>Pokémon Sword & Shield on Nintendo Switch</h2>
+            <h1 class="yellow-text">Become a Legend</h1>
+            <h2 class="white-text">Pokémon Sword & Shield on Nintendo Switch</h2>
             <a href="#middle">
-                <button class="btn"><strong>Learn More</strong></button>
+                <button class="white-text"><strong>Learn More</strong></button>
             </a>
         </div>
     </div>
@@ -34,7 +39,7 @@ eleventyNavigation:
         <h1 class="blue-text">Choose Your Partner</h1>
         <h2>Here are the starter Pokémon in Sword & Shield</h2>
 
-        <article class="cards-container">
+        <article class="cards-container three-col-grid">
             {% for starter in global_vars.starters %}
                 <div id="{{ starter.name | lower }}" class="card starter-cards">
                     <a href="{{ 'pokedex/' + starter.name | lower | url }}">
@@ -53,14 +58,14 @@ eleventyNavigation:
 
     </div>
 
-    <section class="things yellow-background">
+    <section class="yellow-background" id="things-to-do">
         <div>
             <img src="{{ '/img/pokemon-sword-and-shield.png' | url }}"
                  alt="The Three Starters of Pokémon Sword and Shield"
                  width="60%">
         </div>
         <h1 class="white-text">Things to do in Pokémon Sword & Shield</h1>
-        <div class="container two-col-grid things-list margin-auto">
+        <div class="container two-col-grid margin-auto">
             <div>
                 <p>- Explore the newly discovered Galar Region</p>
                 <p>- See Idyllic Countryside and Contemporary Cities</p>

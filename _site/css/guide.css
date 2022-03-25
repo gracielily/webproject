@@ -1,10 +1,5 @@
 /* CSS for Guide Pages */
 
-.guide {
-    background-image: url("../img/guide-background.jpg");
-    background-position: 50% 12%;
-}
-
 .helpful-guide {
     display: flex;
     margin-bottom: 50px;

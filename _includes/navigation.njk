@@ -1,19 +1,10 @@
 {% set navPages = collections.all | eleventyNavigation %}
-
-<nav id="navigation">
-    <ul class="margin-auto">
-        {%- for navPage in navPages %}
-            {% if page.filePathStem == "/index" %}
-                {% if navPage.key != "Home" %}
-                    <li>
-                        <a href="{{ navPage.url | url }}">{{ navPage.title }}</a>
+    <nav>
+        <ul class="flex margin-auto">
+            {%- for navPage in navPages %}
+                    <li {% if navPage.url == page.url %} class="active"{% endif %}>
+                        <a class="link white-text" href="{{ navPage.url | url }}">{{ navPage.title }}</a>
                     </li>
-                {% endif %}
-            {% else %}
-                <li{% if navPage.url == page.url %} class="active"{% endif %}>
-                    <a href="{{ navPage.url | url }}">{{ navPage.title }}</a>
-                </li>
-            {% endif %}
-        {%- endfor %}
-    </ul>
-</nav>
+            {%- endfor %}
+        </ul>
+    </nav>

@@ -1,0 +1,85 @@
+/* Styling for the Cards Component */
+
+.card-entries {
+    margin: 50px -100px 0 -100px;
+    background: #222f3e;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    margin: 20px;
+    height: 320px;
+    background-color: #fff;
+    box-shadow: rgba(0 0 0 / 22%) 0 15px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cards-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-image {
+    margin: 0 auto;
+    text-align: center;
+    background: #f1f5f8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-image img {
+    width: 120px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-info {
+    margin-top: 20px;
+    padding: 0 30px;
+    text-align: left;
+}
+
+.card .btn {
+    margin-top: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+#locations .card-image img {
+    width: 100%;
+}
+
+.location-cards {
+    height: 90%;
+}
+
+.location-cards .card-image {
+    background: none;
+}
+
+.location-cards .card-info {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.pokedex-entries .card-image img {
+    width: 155px;
+}
+
+#single-entry .cards-container {
+    column-width: fit-content;
+}
+
+#single-entry .card-image {
+    border-radius: 10px;
+    cursor: auto;
+    height: 100%;
+}
+
+#single-entry .card-image img {
+    width: 240px;
+    margin-top: 30px;
+}

@@ -9,53 +9,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/navigation.css">
 </head>
 <body>
 
 
-
-<nav id="navigation">
-    <ul class="margin-auto">
-            
-                <li>
-                    <a href="/">Home</a>
-                </li>
-            
-            
-                <li class="active">
-                    <a href="/galar-region/">The Galar Region</a>
-                </li>
-            
-            
-                <li>
-                    <a href="/wild-area/">The Wild Area</a>
-                </li>
-            
-            
-                <li>
-                    <a href="/pokedex/">Pokedex</a>
-                </li>
-            
-            
-                <li>
-                    <a href="/guide/">Guide</a>
-                </li>
-            
-    </ul>
-</nav>
+    <nav>
+        <ul class="flex margin-auto">
+                    <li >
+                        <a class="link white-text" href="/">Home</a>
+                    </li>
+                    <li  class="active">
+                        <a class="link white-text" href="/galar-region/">The Galar Region</a>
+                    </li>
+                    <li >
+                        <a class="link white-text" href="/wild-area/">The Wild Area</a>
+                    </li>
+                    <li >
+                        <a class="link white-text" href="/pokedex/">Pokedex</a>
+                    </li>
+                    <li >
+                        <a class="link white-text" href="/guide/">Guide</a>
+                    </li>
+        </ul>
+    </nav>
 
 <main>
     
-<link rel="stylesheet" href="/css/galar.css">
+<link rel="stylesheet" href="/css/hero.css">
+<link rel="stylesheet" href="/css/cards.css">
 </head>
 <body>
 
-<div class="hero-image galar">
+<div class="hero-image" id="galar">
     <div class="hero-text-container">
         <div class="hero-text">
-            <h1>The Galar Region</h1>
-            <h2>A region full of unique locations</h2>
+            <h1 class="yellow-text">The Galar Region</h1>
+            <h2 class="white-text">A region full of unique locations</h2>
         </div>
     </div>
 </div>
@@ -91,13 +82,14 @@
             <h1>Explore The Galar Region</h1>
             <h2 class="white-text">Learn more about the most popular areas in Galar by clicking on the below!</h2>
 
-            <article class="cards-container container">
+            <article class="cards-container container three-col-grid">
                 
                     <a href="../galar-region/motostoke">
                         <div id="motostoke" class="card location-cards">
                             <div class="card-image">
                                 <img src="../img/locations/motostoke.png"
-                                     alt="image of Motostoke"/>
+                                     alt="image of Motostoke"
+                                    class="full-width"/>
                             </div>
                             <div class="card-info">
                                 <h2>Motostoke</h2>
@@ -109,7 +101,8 @@
                         <div id="ballonlea" class="card location-cards">
                             <div class="card-image">
                                 <img src="../img/locations/ballonlea.png"
-                                     alt="image of Ballonlea"/>
+                                     alt="image of Ballonlea"
+                                    class="full-width"/>
                             </div>
                             <div class="card-info">
                                 <h2>Ballonlea</h2>
@@ -121,7 +114,8 @@
                         <div id="wyndon" class="card location-cards">
                             <div class="card-image">
                                 <img src="../img/locations/wyndon.png"
-                                     alt="image of Wyndon"/>
+                                     alt="image of Wyndon"
+                                    class="full-width"/>
                             </div>
                             <div class="card-info">
                                 <h2>Wyndon</h2>
@@ -140,10 +134,10 @@
 </script>
 
 </main>
-<section class="footer">
-    <p><a href="https://github.com/gracielily/webproject" target="_blank"><i class="fab fa-github"></i></a></p>
+<footer class="full-width">
+    <p><a class="link white-text" href="https://github.com/gracielily/webproject" target="_blank"><i class="fab fa-github"></i></a></p>
     <p>Grace Kelly - 12722041</p>
-</section>
+</footer>
 </body>
 </html>
 

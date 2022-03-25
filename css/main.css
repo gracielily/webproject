@@ -1,0 +1,444 @@
+/* Main CSS File */
+
+/* Styling for Global Components */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #f8f8ff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1 {
+    color: #d93280;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+h1, .link {
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0 100px;
+}
+
+img {
+    border: 3px transparent;
+    border-radius: 10px;
+}
+
+iframe {
+    margin-bottom: 30px;
+}
+
+.yellow-background {
+    background: #feca57;
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.three-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.intro {
+    width: 60%;
+    margin: 0 auto 30px auto;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.yellow-text {
+    color: #feca57;
+}
+
+.blue-text {
+    color: #54a0ff;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background: #d93280;
+    border: 1px solid transparent;
+    margin-top: 15px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background: #341f97;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+footer .link {
+    font-size: 22px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* CSS for Home Page */
+
+#things-to-do {
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+#things-to-do .two-col-grid {
+    width: 60%;
+    text-align: left;
+}
+
+/* CSS for Galar Pages */
+
+.galar-intro {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.galar-intro h1 {
+    font-size: 38px;
+}
+
+.what-is-galar,
+.explore-galar {
+    margin-top: 60px;
+}
+
+.explore-galar h1 {
+    padding: 0 20px;
+}
+
+.explore-galar p {
+    padding: 20px;
+    margin-top: -20px;
+}
+
+#locations {
+    text-align: center;
+}
+
+#locations p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#motostoke,
+.motostoke-stadium {
+    background: #576574;
+}
+
+#ballonlea {
+    background: #f368e0;
+}
+
+#wyndon {
+    background: #2e86de;
+}
+
+.location-overview .flex {
+    align-items: center;
+}
+
+.location-overview .flex div {
+    padding: 20px;
+    width: 50%;
+}
+
+.location-intro {
+    margin: 80px auto 30px auto;
+    text-align: center;
+}
+
+.location-intro p {
+    text-align: left;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.location-intro img {
+    margin-bottom: 40px;
+}
+
+.location-intro a {
+    color: #576574;
+}
+
+.motostoke-stadium,
+.glimwood-tangle {
+    margin-bottom: 40px;
+}
+
+#kabu {
+    float: right;
+    transform: scaleX(-1);
+}
+
+#locations {
+    text-align: center;
+}
+
+#locations p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.places-interest ul {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.places-interest h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.glimwood-tangle {
+    text-align: left;
+}
+
+.glimwood-tangle p {
+    margin: 0;
+    width: 95%;
+}
+
+#morgrem {
+    transform: scaleX(-1);
+}
+
+.london img:first-child {
+    margin-bottom: -30px;
+    margin-top: 40px
+}
+
+.london {
+    margin-bottom: 60px;
+}
+
+.helpful-guide,
+.weather p,
+.things,
+.galar-intro h1 {
+    margin-bottom: 50px;
+}
+
+/* CSS for Wild Area Page */
+
+.wild-area-intro .flex {
+    justify-content: center;
+    align-items: end;
+}
+
+.wild-area-gallery {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.wild-area-content {
+    width: 50%;
+    padding: 20px;
+}
+
+.weather {
+    background: #54a0ff;
+    padding: 30px;
+    margin-top: 80px;
+}
+
+.weather p {
+    line-height: 1.5em;
+}
+
+.wild-area-content p:last-child {
+    margin-bottom: 0;
+}
+
+.max-raid-intro p:last-child {
+    margin-bottom: 30px;
+}
+
+.max-raid-intro img {
+    display: block;
+    margin: 0 auto 40px auto;
+}
+
+.max-raid-imgs {
+    margin-bottom: 80px;
+}
+
+.max-raid {
+    margin-top: 60px;
+}
+
+/* CSS for Pokedex Pages */
+
+.pokedex-entry-stats {
+    padding: 20px;
+    border-radius: 0 25px 25px 0;
+}
+
+.pokedex-entry-overview {
+    text-align: left;
+    background: #fff;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.pokedex-entry-overview h1 {
+    margin-top: 20px;
+}
+
+.overview-content {
+    column-gap: 40px;
+}
+
+.pokedex-gallery {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.pokedex-entry-stats {
+    column-gap: 40px;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: -60px;
+}
+
+.pokedex-entry-stats {
+    border-radius: 0 !important;
+}
+
+.pokedex-entry-stats img {
+    width: 200px;
+}
+
+#pokedex {
+    background: #ff6b6b;
+    width: 100%;
+}
+
+#pokedex .circles h1 {
+    text-align: center;
+}
+
+.pokedex-intro {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.pokedex-entries {
+    padding: 40px 0;
+    background: #222f3e;
+    border: 10px solid #f1f5f8;
+}
+
+.reference {
+    color: #8395a7;
+    margin-bottom: -10px;
+}
+
+#pokedex h1 {
+    font-size: 38px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.pokedex-intro {
+    margin: 0 auto;
+    text-align: center !important;
+}
+
+.pokedex-intro p {
+    font-size: 18px;
+    font-weight: 600;
+    width: 45%;
+    margin: -10px auto 20px auto;
+}
+
+.pokedex-intro p:nth-child(2) {
+    color: #fff;
+}
+
+.pokemon-heading {
+    margin: 30px auto 0 30px;
+}
+
+#pokedex-entry-type {
+    margin: 0 auto 30px auto;
+}
+
+#heading-row {
+    list-style: none;
+    width: 300px;
+    height: 30px;
+    margin-left: 110px;
+}
+
+#heading-row li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 20px;
+}
+
+#red-circle {
+    background: #ee5253;
+}
+
+#yellow-circle {
+    background: #feca57;
+}
+
+#green-circle {
+    background: #10ac84;
+}
+
+#blue-circle {
+    background: #48dbfb;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 4px solid #fff;
+    display: inline-block;
+}
+

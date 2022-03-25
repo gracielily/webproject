@@ -4,15 +4,16 @@ eleventyNavigation:
     key: The Wild Area
     order: 3
 ---
-<link rel="stylesheet" href="{{ '/css/wild-area.css' | url }}">
+<link rel="stylesheet" href="{{ '/css/hero.css' | url }}">
+<link rel="stylesheet" href="{{ '/css/gallery.css' | url }}">
 </head>
 
 <body>
-    <section class="hero-image wild-area">
+    <section class="hero-image" id="wild-area">
         <div class="hero-text-container">
             <div class="hero-text">
-                <h1>Explore the Vast Expanse of the Wild Area</h1>
-                <h2>A rich and vibrant area teeming with wild Pokémon</h2>
+                <h1 class="yellow-text">Explore the Vast Expanse of the Wild Area</h1>
+                <h2 class="white-text">A rich and vibrant area teeming with wild Pokémon</h2>
             </div>
         </div>
     </section>
@@ -82,7 +83,7 @@ eleventyNavigation:
                 between them. The weather across the entire Wild Area changes each day at midnight.</p>
         </div>
         <section class="wild-area-gallery">
-            <div class="wrapper">
+            <div class="gallery-wrapper">
                 <div class="media">
                   <img src="{{ '/img/wild-area/sandstorm.jpg' | url }}"
                        alt="{{ "image of the Wild Area while a sandstorm rages" }}"/>

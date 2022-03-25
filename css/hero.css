@@ -1,0 +1,49 @@
+/* Styling for Hero Image Container */
+
+.hero-image {
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text-container {
+    /* Set an overlay over the image */
+    background: rgba(0, 0, 0, .45);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    /* Position text within the container */
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* Set Image Backgrounds for Different Pages */
+
+#home {
+    background-image: url("../img/background.png");
+}
+
+#guide {
+    background-image: url("../img/guide-background.jpg");
+    background-position: 50% 12%;
+}
+
+#galar {
+    background-image: url("../img/locations/galar-field.jpg");
+    background-position: 50% 10%;
+}
+
+#wild-area {
+    background-image: url("../img/wild-area/wild-area.png");
+}

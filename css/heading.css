@@ -1,0 +1,19 @@
+/* Styling for Heading Component */
+
+.top-heading {
+    background: #f03c3d;
+    border-bottom: 10px solid #222f3e;
+}
+
+.top-heading h1 {
+    font-size: 38px;
+}
+
+.top-heading-block {
+    padding: 30px 0;
+}
+
+.location-overview .top-heading {
+    text-align: center;
+    margin: 0 auto;
+}

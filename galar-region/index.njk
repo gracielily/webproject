@@ -5,15 +5,16 @@ eleventyNavigation:
     order: 2
 ---
 {% import '_globals.njk' as global_vars %}
-<link rel="stylesheet" href="{{ '/css/galar.css' | url }}">
+<link rel="stylesheet" href="{{ '/css/hero.css' | url }}">
+<link rel="stylesheet" href="{{ '/css/cards.css' | url }}">
 </head>
 <body>
 
-<div class="hero-image galar">
+<div class="hero-image" id="galar">
     <div class="hero-text-container">
         <div class="hero-text">
-            <h1>The Galar Region</h1>
-            <h2>A region full of unique locations</h2>
+            <h1 class="yellow-text">The Galar Region</h1>
+            <h2 class="white-text">A region full of unique locations</h2>
         </div>
     </div>
 </div>
@@ -49,13 +50,14 @@ eleventyNavigation:
             <h1>Explore The Galar Region</h1>
             <h2 class="white-text">Learn more about the most popular areas in Galar by clicking on the below!</h2>
 
-            <article class="cards-container container">
+            <article class="cards-container container three-col-grid">
                 {% for location in global_vars.locations %}
                     <a href="{{ '../galar-region/' + location | lower | url }}">
                         <div id="{{ location | lower }}" class="card location-cards">
                             <div class="card-image">
                                 <img src="{{ '../img/locations/' + location  | lower + '.png' | url }}"
-                                     alt="{{ 'image of ' + location }}"/>
+                                     alt="{{ 'image of ' + location }}"
+                                    class="full-width"/>
                             </div>
                             <div class="card-info">
                                 <h2>{{ location }}</h2>
