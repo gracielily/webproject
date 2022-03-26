@@ -24,6 +24,7 @@ eleventyNavigation:
     <main>
         <section class="container flex">
             {# add mini menu that directs to a section in the page #}
+            <!-- Mini Menu Column -->
             <aside class="mini-menu">
                 <ul>
                     <li><a href="#pokeballs" class="link white-text">Pokeballs</a></li>
@@ -32,15 +33,19 @@ eleventyNavigation:
                 </ul>
             </aside>
 
+            <!-- Tables Column -->
             <section>
-                <div>
+                <!-- Guide Intro Section -->
+                <section>
                     <br/>
                     <h1>Helpful Guide</h1>
                     <p>Here you will find some tips to help you on your playthrough. You can find out about the different
                         pokeballs, move types
                         and gym leaders that you will find int the game.</p>
-                </div>
+                </section>
                 <br/>
+
+                <!-- Pokeballs Table -->
                 <h2 id="pokeballs">Pokeballs Guide</h2>
                 <p>Here you can find a list of pokeballs found in Sword & Shield, what they do and where to find them</p>
                 <table>
@@ -66,6 +71,7 @@ eleventyNavigation:
                     </tbody>
                 </table>
 
+                <!-- Moves Table -->
                 <h2 id="moves">Move Type Guide</h2>
                 <p>Here you can find a list of move types and how they compare to others in the game</p>
                 <table>
@@ -107,6 +113,7 @@ eleventyNavigation:
                     </tbody>
                 </table>
 
+                <!-- Gym Leaders Table -->
                 <h2 id="gymleaders">Gym Leader Guide</h2>
                 <p>Here you can find a list of the gym leaders in Sword & Shield</p>
                 <table id="gymleaders-table">

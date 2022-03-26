@@ -9,8 +9,8 @@ Nunjucks Templating Language and be able to deploy the site using Github Pages.
 ## About Website
 
 ### Topic
-This website is on the topic of Pokémon Sword & Shield - video games
-that were launched on the Nintendo Switch which I recently had played.
+This website is on the topic of Pokémon Sword & Shield - video games that were launched on the 
+Nintendo Switch console which I enjoyed playing.
 
 ### Technologies Used
 
@@ -18,7 +18,7 @@ that were launched on the Nintendo Switch which I recently had played.
 - CSS
 - Nunjucks
 - Eleventy
-- Github
+- Github Workflow
 
 ### How to View
 The website can be viewed [here](https://gracielily.github.io/webproject/)
@@ -46,10 +46,9 @@ eleventy --serve
 │   ├── _globals.njk
 │   ├── footer.njk
 │   ├── header.njk
-│   ├── heading.njk
 │   ├── layout.njk
 │   ├── navigation.njk
-│   └── pokedex.njk
+│   └── pokedex-entry.njk
 ├── _site
 │   ├── css
 │   ├── galar-region
@@ -59,24 +58,18 @@ eleventy --serve
 │   ├── pokedex
 │   └── wild-area
 ├── css
-│   ├── common.css
-│   ├── galar.css
-│   ├── guide.css
-│   ├── pokedex.css
-│   └── wild-area.css
-├── img
-│   ├── gymleaders
-│   ├── locations
-│   ├── pokeballs
-│   ├── pokemon
-│   └── wild-area
+│   ├── components
+│   └── main.css
 ├── galar-region
 │   ├── ballonlea.njk
 │   ├── index.njk
 │   ├── motostoke.njk
 │   └── wyndon.njk
 ├── guide.njk
+├── img
 ├── index.njk
+├── package-lock.json
+├── package.json
 ├── pokedex
 │   ├── corviknight.njk
 │   ├── grookey.njk
@@ -117,13 +110,19 @@ eleventy --serve
 </details>
 
 <details>
-<summary>A Selection of Screenshots</summary>
+<summary>Screenshots</summary>
 
 #### Home Page
 ![Home Page](documentation/screenshots/index-page.png)
 
 #### The Galar Region
 ![Galar Region](documentation/screenshots/galar-region.png)
+
+#### Galar Region Location - Motostoke
+![Motostoke](documentation/screenshots/motostoke.png)
+
+#### Galar Region Location - Ballonlea
+![Ballonlea](documentation/screenshots/ballonlea.png)
 
 #### Galar Region Location - Wyndon
 ![Wyndon](documentation/screenshots/wyndon.png)
@@ -136,6 +135,9 @@ eleventy --serve
 
 #### Pokedex Entry
 ![Pokedex_Entry](documentation/screenshots/pokedex-entry.png)
+
+#### Guide
+![Guide](documentation/screenshots/guide.png)
 
 </details>
 

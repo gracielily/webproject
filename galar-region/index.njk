@@ -20,11 +20,14 @@ eleventyNavigation:
     </header>
     <main>
         <section class="container" id="galar-region">
+
+            <!-- Galar Intro Section -->
             <section class="align-center" id="galar-intro">
                 <h1>Welcome to Galar</h1>
                 <img src="{{ '/img/locations/galar-region.jpg' | url }}" alt="The Galar Region"/>
             </section>
 
+            <!-- What is Galar Section -->
             <section id="what-is-galar">
                 <h2>What is the Galar Region?</h2>
                 <p>The Galar Region is the setting for the games. When creating the game, the creators
@@ -33,6 +36,7 @@ eleventyNavigation:
                     explore. </p>
             </section>
 
+            <!-- Explore Galar Section -->
             <section class="flex" id="explore-galar">
                 <div>
                     <img src="{{ '/img/locations/cities.gif' | url }}" alt="different cities of Galar">
@@ -46,11 +50,13 @@ eleventyNavigation:
                 </div>
             </section>
 
+            <!-- Links to Galar Region Location Pages -->
             <section>
                 <div class="card-entries align-center white-text" id="galar-locations">
                     <h1>Explore The Galar Region</h1>
                     <h2 class="white-text">Learn more about the most popular areas in Galar by clicking on the below!</h2>
 
+                   <!-- Location Cards -->
                     <article class="cards-container container three-col-grid">
                         {% for location in global_vars.locations %}
                             <a href="{{ '../galar-region/' + location | lower | url }}">

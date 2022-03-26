@@ -23,9 +23,10 @@ eleventyNavigation:
         </div>
     </header>
     <main>
+
         <section class="align-center" id="middle">
-            <br/>
-            <div class="container" id="home-intro">
+            <!-- Home Intro Section -->
+            <section class="container" id="home-intro">
                 <h1>Welcome to a brand new world of Pokémon!</h1>
                 <p>Pokémon Sword & Shield is a game on Nintendo
                     Switch
@@ -33,31 +34,36 @@ eleventyNavigation:
                     of dynamic cities, rolling countryside, forest and mountains.
                     Players can visit Gyms throughout Galar as they train to be the Champion.</p>
                 <br/>
-            </div>
+            </section>
 
-            <img src="{{ '/img/starters.gif' | url }}" alt="The Three Starters of Pokémon Sword and Shield" width="50%">
-            <div class="container">
-                <h1 class="blue-text">Choose Your Partner</h1>
-                <h2>Here are the starter Pokémon in Sword & Shield</h2>
+            <!-- About Starters Section -->
+            <section>
+                <img src="{{ '/img/starters.gif' | url }}" alt="The Three Starters of Pokémon Sword and Shield" width="50%">
+                <div class="container">
+                    <h1 class="blue-text">Choose Your Partner</h1>
+                    <h2>Here are the starter Pokémon in Sword & Shield</h2>
 
-                <article class="cards-container three-col-grid">
-                    {% for starter in global_vars.starters %}
-                        <div class="card">
-                            <a href="{{ 'pokedex/' + starter.name | lower | url }}">
-                                <div class="card-image">
-                                    <img src="{{ 'img/pokemon/' + starter.name  | lower + '.png' | url }}"
-                                         alt="{{ 'image of ' + starter.name }}"/>
-                                </div>
-                                <div class="card-info">
-                                    <h2>{{ starter.name }}</h2>
-                                    <p>{{ starter.tagline }}</p>
-                                </div>
-                            </a>
-                        </div>
-                    {% endfor %}
-                </article>
-            </div>
+                    <!-- Starters Cards -->
+                    <article class="cards-container three-col-grid">
+                        {% for starter in global_vars.starters %}
+                            <div class="card">
+                                <a href="{{ 'pokedex/' + starter.name | lower | url }}">
+                                    <div class="card-image">
+                                        <img src="{{ 'img/pokemon/' + starter.name  | lower + '.png' | url }}"
+                                             alt="{{ 'image of ' + starter.name }}"/>
+                                    </div>
+                                    <div class="card-info">
+                                        <h2>{{ starter.name }}</h2>
+                                        <p>{{ starter.tagline }}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </article>
+                </div>
+            </section>
 
+            <!-- Things To Do Section -->
             <section class="yellow-background" id="things-to-do">
                 <div>
                     <img src="{{ '/img/pokemon-sword-and-shield.png' | url }}"
@@ -79,6 +85,7 @@ eleventyNavigation:
                 </div>
             </section>
 
+            <!-- Trailer Section -->
             <section class="container">
                 <h1>Watch the trailer</h1>
                 <iframe width="100%" height="636"
