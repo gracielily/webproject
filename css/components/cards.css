@@ -79,7 +79,8 @@
     column-width: fit-content;
 }
 
-.cards-container a,
+.pokedex-entries .cards-container a,
+#galar-locations .cards-container a,
 #single-entry .card-image {
     cursor: auto;
 }
