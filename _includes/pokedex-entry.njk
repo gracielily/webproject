@@ -19,8 +19,7 @@
         </div>
     </header>
     <main class="pokedex">
-        <br/>
-        <section class="container">
+        <section class="container pokedex-container">
             <!-- Breadcrumb Link -->
             <p><a class="link white-text" href="../"><i class="fa fa-arrow-left"></i> Back to Pokedex</a></p>
 
@@ -43,8 +42,8 @@
                             <p id="pokedex-entry-type"><span id="{{ pokemon.type | lower }}"
                                      class="type">{{ pokemon.type }}</span></p>
                             <p>{{ pokemon.description }}</p>
-                            <p><strong>Height: </strong>{{ pokemon.height }}</p>
-                            <p><strong>Weight: </strong>{{ pokemon.weight }}</p>
+                            <p><span class="bold-text">Height: </span>{{ pokemon.height }}</p>
+                            <p><span class="bold-text">Weight: </span>{{ pokemon.weight }}</p>
                         </div>
                     </section>
                 </article>
@@ -53,18 +52,18 @@
                 <section class="align-center pokedex-entry-stats three-col-grid" id="{{ pokemon.type | lower }}">
                     <div>
                         <h2 class="white-text">Species</h2>
-                        <p><strong>{{ pokemon.species }}</strong></p>
+                        <p><span class="bold-text">{{ pokemon.species }}</span></p>
                     </div>
                     <div>
                         <h2 class="white-text">Abilities</h2>
                         {% for ability in pokemon.abilities %}
-                            <p><strong>{{ ability }}</strong></p>
+                            <p><span class="bold-text">{{ ability }}</span></p>
                         {% endfor %}
                     </div>
                     <div>
                         <h2 class="white-text">Locations</h2>
                         {% for location in pokemon.locations %}
-                            <p><strong>{{ location }}</strong></p>
+                            <p><span class="bold-text">{{ location }}</span></p>
                         {% endfor %}
                     </div>
                 </section>

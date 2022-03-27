@@ -79,9 +79,14 @@
     column-width: fit-content;
 }
 
+.pokedex-entries .cards-container a,
+#galar-locations .cards-container a,
+#single-entry .card-image {
+    cursor: auto;
+}
+
 #single-entry .card-image {
     border-radius: 10px;
-    cursor: auto;
     height: 100%;
 }
 
