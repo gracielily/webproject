@@ -73,6 +73,10 @@ iframe {
     color: #54a0ff;
 }
 
+.bold-text {
+    font-weight: bold;
+}
+
 .margin-auto {
     margin: 0 auto;
 }
@@ -130,12 +134,16 @@ footer .link {
 
 #home-intro {
     width: 60%;
-    margin: 60px auto 30px auto;
+    margin: 60px auto;
+}
+
+#starter-pokemon h1,
+#things-to-do {
+    margin-top: 50px;
 }
 
 #things-to-do {
     padding: 50px 0;
-    margin-top: 50px;
 }
 
 #things-to-do .two-col-grid {
@@ -199,7 +207,7 @@ footer .link {
 }
 
 .location-intro {
-    margin: 80px auto 30px auto;
+    margin: 80px auto 60px auto;
 }
 
 .location-intro p {
@@ -215,7 +223,8 @@ footer .link {
     color: #576574;
 }
 
-.location-extra-info {
+.location-extra-info,
+#sherwood {
     margin-bottom: 40px;
 }
 
@@ -239,7 +248,8 @@ footer .link {
     margin-top: 40px
 }
 
-#london {
+#london,
+#guide-intro {
     margin-bottom: 60px;
 }
 
@@ -343,9 +353,9 @@ footer .link {
     display: inline-block;
 }
 
+.pokedex-container,
 #pokedex-intro {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding: 40px 0 80px 0;
 }
 
 .reference {
@@ -358,6 +368,10 @@ footer .link {
     display: inline-block;
     margin-bottom: 20px;
     margin-top: -20px;
+}
+
+#pokedex-intro {
+    padding-bottom: 40px;
 }
 
 #pokedex-intro p {
@@ -388,6 +402,10 @@ footer .link {
 #pokedex-gallery {
     padding: 20px;
     margin-top: 40px;
+}
+
+#pokedex-entry-container{
+    padding-top: 40px;
 }
 
 #pokedex-entry-heading {
