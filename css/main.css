@@ -278,8 +278,8 @@ footer .link {
 }
 
 #wild-area-gallery {
-    padding: 20px;
-    margin-top: 40px;
+    margin-top: -40px;
+    padding: 0 20px;
 }
 
 #weather {
@@ -409,7 +409,7 @@ footer .link {
     margin-top: 40px;
 }
 
-#pokedex-entry-container{
+#pokedex-entry-container {
     padding-top: 40px;
 }
 
