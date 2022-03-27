@@ -79,9 +79,13 @@
     column-width: fit-content;
 }
 
+.cards-container a,
+#single-entry .card-image {
+    cursor: auto;
+}
+
 #single-entry .card-image {
     border-radius: 10px;
-    cursor: auto;
     height: 100%;
 }
 

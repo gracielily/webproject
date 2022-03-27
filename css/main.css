@@ -317,6 +317,10 @@ footer .link {
     width: 100%;
 }
 
+.top-heading .yellow-text {
+    margin-top: -25px;
+}
+
 .circles-row {
     list-style: none;
     width: 300px;
@@ -373,6 +377,7 @@ footer .link {
 #pokedex-intro {
     padding-bottom: 40px;
 }
+
 
 #pokedex-intro p {
     font-size: 18px;
